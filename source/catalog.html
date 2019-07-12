@@ -9,10 +9,10 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип «CAT ENERGY»">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__image" src="http://placehold.it/150x100" alt="Логотип «CAT ENERGY»">
+        <img class="main-logo__title" src="http://placehold.it/150x100" alt="CAT ENERGY">
       </a>
-      <img class="page-header__logo-title" src="http://placehold.it/150x100" alt="CAT ENERGY">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -33,170 +33,186 @@
   </header>
   <main class="main-page">
     <section class="catalog-goods">
-      <h1 class="visually-hidden">Функциональное питание для котов</h1>
-      <h2 class="catalog-goods__title">Каталог продукции</h2>
+      <h1 class="catalog-goods__title">Каталог продукции</h1>
       <ul class="catalog-goods__list">
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 500 г Курица">
-          <h3 class="goods__title">Cat Energy PRO 500 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">500 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 500 г Курица">
+            <h2 class="product__item__title">Cat Energy PRO 500 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">500 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Курица</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Курица</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">700 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">700 Р.</td>
             </tr>
           </table>
-          <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 1000 г Курица">
-          <h3 class="goods__title">Cat Energy PRO 1000 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">1000 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 1000 г Курица">
+            <h2 class="product__item__title">Cat Energy PRO 500 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">1000 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Курица</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Курица</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">1000 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">1000 Р.</td>
             </tr>
           </table>
-        <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 500 г Рыба">
-          <h3 class="goods__title">Cat Energy PRO 500 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">500 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 500 г Рыба">
+            <h2 class="product__item__title">Cat Energy PRO 500 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">500 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Рыба</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Рыба</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">700 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">700 Р.</td>
             </tr>
           </table>
-          <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 1000 г Рыба">
-          <h3 class="goods__title">Cat Energy PRO 500 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">1000 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy PRO 1000 г Рыба">
+            <h2 class="product__item__title">Cat Energy PRO 1000 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">500 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Рыба</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Рыба</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">1000 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">1000 Р.</td>
             </tr>
           </table>
-        <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat Energy SLIM 500 г Гречка">
-          <h3 class="goods__title">Cat Energy SLIM 500 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">500 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy SLIM 500 г Гречка">
+            <h2 class="product__item__title">Cat Energy SLIM 500 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">500 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Гречка</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Гречка</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">400 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">400 Р.</td>
             </tr>
           </table>
-          <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat Energy SLIM 500 г Гречка">
-          <h3 class="goods__title">Cat Energy SLIM 500 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">1000 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy SLIM 1000 г Гречка">
+            <h2 class="product__item__title">Cat Energy SLIM 1000 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">1000 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Гречка</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Гречка</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">700 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">700 Р.</td>
             </tr>
           </table>
-          <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog-goods__item goods">
-          <img class="goods__image " src="http://placehold.it/150x100" alt="Cat SLIM PRO 500 г Рис">
-          <h3 class="goods__title">Cat Energy SLIM 500 г</h3>
-          <table class="goods__composition composition__table">
-            <tr class="composition__line">
-              <td class="composition__element">Объем</td>
-              <td class="composition__ingredient">500 г</td>
+        <li class="catalog-goods__item product">
+          <a class="product__item">
+            <img class="product__item__image " src="http://placehold.it/150x100" alt="Cat Energy SLIM 500 г Рис">
+            <h2 class="product__item__title">Cat Energy Slim 500 г</h2>
+          </a>
+          <table class="product__composition">
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Объем</td>
+              <td class="product__element__property">500 г</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Вкус/td>
-              <td class="composition__ingredient">Рис</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Вкус</td>
+              <td class="product__element__property">Рис</td>
             </tr>
-            <tr class="composition__line">
-              <td class="composition__element">Цена/td>
-              <td class="composition__ingredient">500 Р.</td>
+            <tr class="product__composition__wrapper">
+              <td class="product__element">Цена</td>
+              <td class="product__element__property">400 Р.</td>
             </tr>
           </table>
-          <button class="button goods__button" type="button">Заказать</button>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
       </ul>
       <div class="all-goods">
         <b class="all-goods__title">Показать еще 100500 товаров</b>
         <small class="all-goods__text">На самом деле вкусов гораздо больше!</small>
-          <button class="button all-goods__button" type="button">Показать все</button>
+        <a class="button all-goods__button" href="#">Показать все</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <img class="page-footer__logo-title" src="http://placehold.it/150x100" alt="CAT ENERGY">
-    <div class="page-footer__social">
+    <a class="main-logo" href="index.html">
+      <img class="main-logo__title" src="http://placehold.it/150x100" alt="CAT ENERGY"></a>
+    <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#" alt="Мы в ВКонтакте">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в ВКонтакте">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="#" alt="Мы в Инстаграмме">Инстаграмм</a>
+          <a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграмме">Инстаграмм</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#" alt="Мы в Фейсбуке">Фейсбук</a>
+          <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">Фейсбук</a>
         </li>
       </ul>
     </div>
     <div class="copyright">
-      <p class="copyright__title">HTML Academy</p>
-      <a class="copyright__logo" href="#">
-        <img class="opyright__logo-logo" src="http://placehold.it/150x100" alt="Логотип HTML Academy">
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__logo__title">HTML Academy</p>
+        <img class="copyright__logo__image" src="http://placehold.it/150x100" alt="Логотип HTML Academy">
       </a>
     </div>
   </footer>
 </body>
+
+</html>
