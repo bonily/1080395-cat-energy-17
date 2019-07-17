@@ -1,0 +1,11 @@
+.catalog-goods {
+  @include mobile-width;
+}
+
+.catalog-goods__title {
+  @include section-title;
+}
+
+.catalog-goods__list {
+  list-style: none;
+}
