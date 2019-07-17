@@ -1,6 +1,7 @@
 @import "fonts-style.scss", "mixin.scss", "variables.scss", "normalize.scss";
 
-@import "blocks/body.scss";
+@import "blocks/global.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/specification.scss";
 @import "blocks/page-header.scss";
 @import "blocks/company-good.scss";
@@ -15,3 +16,4 @@
 @import "blocks/catalog-goods.scss";
 @import "blocks/product.scss";
 @import "blocks/all-goods.scss";
+@import "blocks/visually-hidden.scss";

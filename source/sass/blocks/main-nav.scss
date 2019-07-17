@@ -1,0 +1,32 @@
+.main-logo__image {
+  opacity: 1;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__toggle {
+  min-width: 24px;
+  min-height: 18px;
+  background: repeating-linear-gradient(#ffffff 2px, #000000 6px);
+  background-image: url('../img/icon-mobile-menu.svg');
+  border: 0;
+}
+
+.main-nav__list {
+  font-family: $title-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.main-nav__item {
+  border-top: 2px solid #e6e6e6;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
