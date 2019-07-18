@@ -1,0 +1,27 @@
+.company-good__wrapper {
+  @include mobile-center;
+  background: linear-gradient($color-bg-btn 70%, #ffffff 30%);
+  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+}
+
+.company-good__main-title {
+  @include section-title(#ffffff, 36px);
+}
+
+.company-good__tagline {
+  font-family: $title-font;
+  color: #ffffff;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.company-good_button {
+  padding-top: 12px;
+}
+
+.company-good__program {
+  @include mobile-center;
+}

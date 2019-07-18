@@ -1,0 +1,11 @@
+.button {
+  display: block;
+  max-width: 280px;
+  min-height: 40px;
+  font-family: $title-font;
+  color: #ffffff;
+  background-color: $color-bg-btn;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}

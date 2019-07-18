@@ -1,0 +1,13 @@
+@mixin section-title($font: #111111, $height: 60px) {
+  font-family: $title-font;
+  color: $font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: $height;
+}
+
+@mixin mobile-center {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}

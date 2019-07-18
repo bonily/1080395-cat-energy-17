@@ -1,0 +1,30 @@
+
+.social__list {
+  list-style: none;
+}
+
+.social__link {
+  &--vkontakte{
+    display: block;
+    width: 22px;
+    height: 12px;
+    background-image: url('../img/icon-vk.svg');
+    background-repeat: no-repeat;
+  }
+  &--instagram {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/icon-insta.svg');
+    background-repeat: no-repeat;
+
+  }
+  &--facebook {
+    display: block;
+    width: 10px;
+    height: 19px;
+    background-image: url('../img/icon-fb.svg');
+    background-repeat: no-repeat;
+
+  }
+}

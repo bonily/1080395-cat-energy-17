@@ -1,0 +1,7 @@
+.example {
+  @include mobile-center;
+}
+
+.example__title {
+  @include section-title;
+}

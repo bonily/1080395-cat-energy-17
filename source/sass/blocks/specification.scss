@@ -1,0 +1,58 @@
+.specification {
+  @include mobile-center;
+}
+
+.specification__title {
+  @include section-title;
+}
+
+.specification__list {
+  list-style: none;
+}
+
+.specification__item {
+  &--sheet {
+    &::before {
+      content: " ";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url('../img/advantage-leaf@1x.png'),
+      $color-bg-btn;
+      background-position: center;
+    }
+  }
+  &--water {
+    &::before {
+      content: " ";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url('../img/advantage-powder@1x.png'),
+    $color-bg-btn;
+      background-position: center;
+    }
+  }
+  &--appliances {
+    &::before {
+      content: " ";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url('../img/advantage-dining@1x.png'),
+      $color-bg-btn;
+      background-position: center;
+    }
+  }
+  &--clock {
+    &::before {
+      content: " ";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url('../img/advantage-clock@1x.png'),
+    $color-bg-btn;
+      background-position: center;
+    }
+  }
+}

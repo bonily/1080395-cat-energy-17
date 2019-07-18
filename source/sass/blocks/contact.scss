@@ -1,0 +1,7 @@
+.contact {
+  @include mobile-center;
+}
+
+.contact__title {
+  @include section-title;
+}
