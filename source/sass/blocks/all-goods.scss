@@ -2,6 +2,7 @@
   font-family: $title-font;
   font-size: 16px;
   line-height: 20px;
+  color: $color-title;
   font-weight: normal;
   text-transform: uppercase;
   &::before {
@@ -20,6 +21,8 @@
 }
 
 .all-goods__button {
+  font-size: 16px;
+  line-height: 20px;
   color: $color-text;
   background-color: #f2f2f2;
   padding-top: 11px;
