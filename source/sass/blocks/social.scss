@@ -1,6 +1,11 @@
 
 .social__list {
+  display: flex;
+  width: 125px;
   list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: auto;
 }
 
 .social__link {

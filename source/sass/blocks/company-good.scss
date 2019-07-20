@@ -7,8 +7,11 @@
   text-align: center;
 }
 
+
 .company-good__main-title {
-  @include section-title(#ffffff, 36px);
+  @include section-title(#ffffff, 36px, 36px);
+  padding: 0;
+  margin: 0;
 }
 
 .company-good__tagline {
@@ -24,4 +27,59 @@
 
 .company-good__program {
   @include mobile-center;
+}
+
+@media (min-width: $tablet-width) {
+
+  .company-good__wrapper {
+    position: relative;
+    @include tablet-center;
+    text-align: center;
+    background: #ffffff;
+    background-image: none;
+    padding-left: 120px;
+  }
+
+  .company-good__main-title {
+    @include section-title($color-title, 60px, 60px);
+    text-align: left;
+    max-width: 427px;
+  }
+  .company-good__tagline {
+    @include tablet-fonts
+    font-family: $title-font;
+    color: $color-title;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .company-good_button {
+    @include tablet-fonts;
+    position: absolute;
+    top: 230px;
+    height: 52px;
+    padding-top: 17px;
+  }
+
+  .company-good__program {
+    @include tablet-center;
+  }
+}
+@media (min-width: $desktop-width) {
+
+  .company-good__wrapper {
+    position: relative;
+    @include desktop-center;
+    background-position: right;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff 50%,  $color-bg-btn 50%);
+    background-image: url('../img/index-background-desktop@1x.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 190px;
+  }
+
+  .company-good__program {
+    @include desktop-center;
+  }
 }

@@ -1,3 +1,8 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product__title {
   font-family: $title-font;
   font-size: 16px;
@@ -13,7 +18,29 @@
 }
 
 .product__button {
+  min-width: 280px;
   font-size: 16px;
   line-height: 20px;
   padding-top: 11px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  .product__image {
+    width: 324px;
+  }
+
+  .product__title {
+    font-size: 20px;
+  }
+  .product__composition {
+    font-size: 16px;
+  }
 }
