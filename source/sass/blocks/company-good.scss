@@ -1,12 +1,14 @@
 .company-good__wrapper {
-  @include mobile-center;
-  background: linear-gradient($color-bg-btn 70%, #ffffff 30%);
-  background-image: url('../img/index-background-mobile@1x.jpg');
+  background:
+  url("../img/index-background-mobile@1x.jpg"),
+  linear-gradient(to bottom, $color-bg 70%, #ffffff 30%);
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
 }
-
+.company-good__container {
+    @include mobile-center;
+}
 
 .company-good__main-title {
   @include section-title(#ffffff, 36px, 36px);
@@ -32,11 +34,14 @@
 @media (min-width: $tablet-width) {
 
   .company-good__wrapper {
+    background: #ffffff;
+    background-image: none;
+  }
+
+  .company-good__container {
     position: relative;
     @include tablet-center;
     text-align: center;
-    background: #ffffff;
-    background-image: none;
     padding-left: 120px;
   }
 
@@ -68,14 +73,19 @@
 @media (min-width: $desktop-width) {
 
   .company-good__wrapper {
-    position: relative;
-    @include desktop-center;
     background-position: right;
-    text-align: center;
-    background: linear-gradient(to right, #ffffff 50%,  $color-bg-btn 50%);
-    background-image: url('../img/index-background-desktop@1x.jpg');
+    background:
+    url("../img/index-background-desktop@1x.jpg"),
+    linear-gradient(to right, #ffffff 50%,  $color-bg 50%);
     background-position: right;
     background-repeat: no-repeat;
+
+  }
+
+  .company-good__container {
+    position: relative;
+    @include desktop-center;
+    text-align: center;
     padding-left: 190px;
   }
 
