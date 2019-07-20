@@ -1,7 +1,7 @@
-@mixin section-title($font: #111111, $height: 60px) {
+@mixin section-title($font: #111111, $size:36px, $height: 60px) {
   font-family: $title-font;
   color: $font;
-  font-size: 36px;
+  font-size: $size;
   font-weight: 400;
   line-height: $height;
 }
@@ -10,4 +10,21 @@
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@mixin tablet-center {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin desktop-center {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin tablet-fonts ($size: 20px, $height: 20px){
+  font-size: $size;
+  line-height: $height;
 }

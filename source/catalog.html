@@ -4,30 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>CAT ENERGY.Функциональное питание для котов.</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="main-logo" href="index.html">
-        <img class="main-logo__image" src="img/logo-mobile.svg" width="190" height="40"  alt="Логотип «CAT ENERGY»">
+      <a class="main-logo" href="#">
+        <img class="main-logo__image" src="img/logo-mobile.svg" width="190" height="40" alt="Логотип «CAT ENERGY»">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
+      <button class="nav-toggle" type="button"></button>
+      <nav class="main-nav main-nav--catalog">
+
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a href="#">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
+
       </nav>
     </div>
   </header>
@@ -36,11 +37,13 @@
       <h1 class="catalog-goods__title">Каталог продукции</h1>
       <ul class="catalog-goods__list">
         <li class="catalog-goods__item product">
-          <a class="product__item">
-            <img class="product__image " src="img/chicken-small-tablet@1x.png" alt="Cat Energy PRO 500 г Курица">
-            <h2 class="product__title">Cat Energy PRO 500 г</h2>
+          <a class="product__item-image" href="#">
+            <img class="product__image " src="img/chicken-small-tablet@1x.png" width="140" alt="Cat Energy PRO 500 г Курица">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">500 г</td>
@@ -57,11 +60,13 @@
           <a class="button product__button" href="#">Заказать</a>
         </li>
         <li class="catalog-goods__item product">
-          <a class="product__item">
-            <img class="product__image " src="img/chicken-big-tablet@1x.png" alt="Cat Energy PRO 1000 г Курица">
-            <h2 class="product__title">Cat Energy PRO 500 г</h2>
+          <a class="product__item-image" href="#">
+            <img class="product__image " src="img/chicken-big-tablet@1x.png"  width="140"  alt="Cat Energy PRO 1000 г Курица">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">1000 г</td>
@@ -79,10 +84,12 @@
         </li>
         <li class="catalog-goods__item product">
           <a class="product__item">
-            <img class="product__image " src="img/fish-small-tablet@1x.png" alt="Cat Energy PRO 500 г Рыба">
-            <h2 class="product__title">Cat Energy PRO 500 г</h2>
+            <img class="product__image " src="img/fish-small-tablet@1x.png"  width="140"  alt="Cat Energy PRO 500 г Рыба">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">500 г</td>
@@ -100,10 +107,12 @@
         </li>
         <li class="catalog-goods__item product">
           <a class="product__item">
-            <img class="product__image " src="img/fish-big-tablet@1x.png" alt="Cat Energy PRO 1000 г Рыба">
-            <h2 class="product__title">Cat Energy PRO 1000 г</h2>
+            <img class="product__image " src="img/fish-big-tablet@1x.png"  width="140"  alt="Cat Energy PRO 1000 г Рыба">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">500 г</td>
@@ -121,10 +130,12 @@
         </li>
         <li class="catalog-goods__item product">
           <a class="product__item">
-            <img class="product__image " src="img/buckwheat-small-tablet@1x.png" alt="Cat Energy SLIM 500 г Гречка">
-            <h2 class="product__title">Cat Energy SLIM 500 г</h2>
+            <img class="product__image " src="img/buckwheat-small-tablet@1x.png"  width="140" alt="Cat Energy SLIM 500 г Гречка">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">500 г</td>
@@ -142,10 +153,12 @@
         </li>
         <li class="catalog-goods__item product">
           <a class="product__item">
-            <img class="product__image " src="img/buckwheat-big-tablet@1x.png" alt="Cat Energy SLIM 1000 г Гречка">
-            <h2 class="product__title">Cat Energy SLIM 1000 г</h2>
+            <img class="product__image " src="img/buckwheat-big-tablet@1x.png"  width="140" alt="Cat Energy SLIM 1000 г Гречка">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">1000 г</td>
@@ -163,10 +176,12 @@
         </li>
         <li class="catalog-goods__item product">
           <a class="product__item">
-            <img class="product__image " src="img/rice-small-tablet@1x.png" alt="Cat Energy SLIM 500 г Рис">
-            <h2 class="product__title">Cat Energy Slim 500 г</h2>
+            <img class="product__image " src="img/rice-small-tablet@1x.png"  width="140" alt="Cat Energy SLIM 500 г Рис">
           </a>
           <table class="product__composition">
+            <caption class="product__title">
+              <a class="product__item-title" href="#">Cat Energy PRO 500 г</a>
+            </caption>
             <tr class="product__composition-wrapper">
               <td class="product__element">Объем</td>
               <td class="product__element-property">500 г</td>
@@ -182,17 +197,17 @@
           </table>
           <a class="button product__button" href="#">Заказать</a>
         </li>
-      </ul>
-      <div class="all-goods">
+      <li class="catalog-goods__all-goods all-goods">
         <b class="all-goods__title">Показать еще 100500 товаров</b>
         <small class="all-goods__text">На самом деле вкусов гораздо больше!</small>
         <a class="button all-goods__button" href="#">Показать все</a>
-      </div>
+      </li>
+      </ul>
     </section>
   </main>
   <footer class="page-footer">
     <a class="main-logo" href="#">
-      <img class="main-logo__title" src="img/logo-footer.svg" width="128" height="24"  alt="CAT ENERGY"></a>
+      <img class="main-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY"></a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

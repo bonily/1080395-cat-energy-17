@@ -9,3 +9,53 @@
 .catalog-goods__list {
   list-style: none;
 }
+
+.catalog-goods__all-goods {
+  display: block;
+  width: 100%;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .catalog-goods {
+    @include tablet-center;
+  }
+  .catalog-goods__title {
+    @include section-title($color-title, 60px, 60px);
+  }
+
+  .catalog-goods__list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .catalog-goods__item {
+    width: 50%;
+      margin-top: auto;
+  }
+
+  .catalog-goods__all-goods {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: $desktop-width){
+
+  .catalog-goods {
+    @include desktop-center;
+  }
+
+
+  .catalog-goods__item {
+    width: 25%;
+  }
+
+  .catalog-goods__all-goods {
+    width: 25%;
+  }
+}

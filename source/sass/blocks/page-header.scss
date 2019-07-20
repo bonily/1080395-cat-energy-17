@@ -1,3 +1,26 @@
 .page-header__wrapper {
   @include mobile-center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: $tablet-width) {
+.page-header__wrapper {
+  @include tablet-center ;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+
+  }
+
+
+  .page-header__wrapper {
+    @include desktop-center ;
+    min-height: 140px;
+    margin-top: 54px;
+  }
 }

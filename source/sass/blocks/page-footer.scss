@@ -1,3 +1,18 @@
 .page-footer {
     @include mobile-center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+      @include tablet-center;
+      display: flex;
+      justify-content: space-between;
+  }
+}
+  @media (min-width: $desktop-width) {
+
+      .page-footer  {
+          @include desktop-center;
+      }
+
+  }

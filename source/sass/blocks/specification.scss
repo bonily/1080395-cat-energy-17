@@ -8,6 +8,7 @@
 
 .specification__list {
   list-style: none;
+  padding: 0;
 }
 
 .specification__item {
@@ -17,7 +18,7 @@
       display: block;
       width: 60px;
       height: 60px;
-      background: url('../img/advantage-leaf@1x.png'),
+      background: url("../img/advantage-leaf@1x.png"),
       $color-bg-btn;
       background-position: center;
     }
@@ -28,7 +29,7 @@
       display: block;
       width: 60px;
       height: 60px;
-      background: url('../img/advantage-powder@1x.png'),
+      background: url("../img/advantage-powder@1x.png"),
     $color-bg-btn;
       background-position: center;
     }
@@ -39,7 +40,7 @@
       display: block;
       width: 60px;
       height: 60px;
-      background: url('../img/advantage-dining@1x.png'),
+      background: url("../img/advantage-dining@1x.png"),
       $color-bg-btn;
       background-position: center;
     }
@@ -50,9 +51,46 @@
       display: block;
       width: 60px;
       height: 60px;
-      background: url('../img/advantage-clock@1x.png'),
+      background: url("../img/advantage-clock@1x.png"),
     $color-bg-btn;
       background-position: center;
     }
   }
+}
+
+@media (min-width: $tablet-width) {
+
+  .specification {
+    @include tablet-center;
+  }
+  .specification__title {
+    @include section-title($color-title, 60px, 60px);
+  }
+  .specification__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .specification__item {
+    @include tablet-fonts(16px, 24px);
+    max-width: 50%;
+  }
+}
+    @media (min-width: $desktop-width) {
+
+      .specification {
+        @include desktop-center;
+        padding-left: 70px;
+        padding-right: 70px;
+      }
+
+      .specification__list {
+        display: flex;
+
+      }
+
+      .specification__item {
+        max-width: 25%;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
 }

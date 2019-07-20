@@ -9,3 +9,10 @@
   text-transform: uppercase;
   margin: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    min-width: 245px;
+  }
+
+}
