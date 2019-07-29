@@ -1,0 +1,13 @@
+.aditional-goods {
+  min-height: 935px;
+}
+@media (min-width: $tablet-width) {
+.aditional-goods {
+  min-height: 636px;
+}
+}
+@media (min-width: $desktop-width) {
+.aditional-goods {
+  min-height: 518px;
+}
+}

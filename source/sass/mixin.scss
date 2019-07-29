@@ -8,6 +8,7 @@
 
 @mixin mobile-center {
   max-width: 320px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,12 +17,14 @@
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 30px;
 }
 
 @mixin desktop-center {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 40px;
 }
 
 @mixin tablet-fonts ($size: 20px, $height: 20px){
