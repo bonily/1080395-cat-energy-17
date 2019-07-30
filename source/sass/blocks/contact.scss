@@ -1,7 +1,25 @@
 .contact {
+  min-height: 508px;
+}
+
+.contact {
   @include mobile-center;
 }
 
 .contact__title {
   @include section-title;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    min-height: 1020px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    min-height: 423px;
+  }
 }

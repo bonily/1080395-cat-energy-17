@@ -1,7 +1,38 @@
-.example {
+.example-wrapper {
   @include mobile-center;
+  min-height: 658px;
 }
 
 .example__title {
   @include section-title;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: $tablet-width) {
+  .example {
+    border-top: 2px solid $color-border;
+  }
+
+  .example-wrapper {
+    @include tablet-center;
+    min-height: 658px;
+  }
+
+  .example__title {
+    @include section-title($color-title, 60px, 60px);
+    padding-top: 42px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .example {
+    border-top: none;
+  }
+
+  .example-wrapper {
+    @include desktop-center;
+  }
+
+  .example__title {
+    padding-top: 90px;
+  }
 }
