@@ -53,23 +53,24 @@
     padding-bottom: 20px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
   }
 
-.main-logo__image {
-  margin-top: 22px;
-  width: 173px;
-  height: 58px;
-}
-
+  .main-logo__image {
+    margin-top: 22px;
+    width: 173px;
+    height: 58px;
+  }
 
   .main-nav__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-width: 440px;
+
     @include tablet-fonts (18px, 25px);
     font-weight: normal;
     padding-top: 42px;
@@ -97,9 +98,16 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
+  .main-logo__image {
+    width: 202px;
+    height: 59px;
+  }
+
   .main-nav__list {
     min-width: 480px;
+
     @include tablet-fonts (20px, 25px);
   }
 
@@ -118,7 +126,6 @@
       border-bottom: 2px solid #ffffff;
     }
   }
-
 
   .main-nav--catalog .main-nav__item,
   .main-nav--form .main-nav__item {

@@ -1,16 +1,19 @@
 .example-wrapper {
   @include mobile-center;
-  min-height: 658px;
+  min-height: 705px;
 }
 
 .example__title {
   @include section-title;
   margin: 0;
   padding: 0;
+  padding-top: 19px;
 }
+
 @media (min-width: $tablet-width) {
   .example {
     border-top: 1px solid $color-border;
+    min-height: 1080px;
   }
 
   .example-wrapper {
@@ -23,9 +26,12 @@
     padding-top: 42px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .example {
     border-top: none;
+    min-height: 0;
+    height: 679px;
   }
 
   .example-wrapper {

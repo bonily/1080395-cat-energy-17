@@ -28,6 +28,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   &::after {
     content: " ";
     position: absolute;
@@ -53,13 +54,16 @@
   padding-top: 11px;
   margin-top: 20px;
   margin-bottom: 25px;
-  &:hover{
+
+  &:hover {
     background-color: #ebebeb;
   }
-  &:active{
+
+  &:active {
     color: #c3c3c3;
   }
 }
+
 @media (min-width: $tablet-width) {
   .all-goods {
     max-height: 100%;
@@ -90,6 +94,7 @@
       background-color: $color-border;
       padding-left: 0;
     }
+
     &::after {
       width: 60px;
       left: calc(50% - 28px);
@@ -112,21 +117,23 @@
     max-width: 250px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .all-goods {
     padding-left: 40px;
     padding-right: 38px;
   }
-    .all-goods__title {
-      max-width: 70%;
-      padding-left: 0;
-      padding-top: 164px;
-    }
 
-    .all-goods__button {
-      min-width: 170px;
-      max-width: 170px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .all-goods__title {
+    max-width: 70%;
+    padding-left: 0;
+    padding-top: 164px;
+  }
+
+  .all-goods__button {
+    min-width: 170px;
+    max-width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

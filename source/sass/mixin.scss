@@ -27,7 +27,7 @@
   padding: 0 40px;
 }
 
-@mixin tablet-fonts ($size: 20px, $height: 20px){
+@mixin tablet-fonts ($size: 20px, $height: 20px) {
   font-size: $size;
   line-height: $height;
 }

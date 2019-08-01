@@ -75,14 +75,13 @@
     position: absolute;
     display: block;
     top: -8px;
-  left: 2px;
+    left: 2px;
     z-index: 0;
     width: 50px;
     height: 50px;
     background-color: $color-bg-btn;
     border-radius: 50%;
   }
-
 }
 
 .program__description {
@@ -98,18 +97,20 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+
   &:hover .program__catalog::after {
     width: 33px;
-        background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-    }
-    &:active {
-      opacity: 0.3;
-    }
-    &:active .program__catalog::after {
-      width: 33px;
-          background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
 
-      }
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .program__catalog::after {
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
 }
 
 .program__catalog {
@@ -118,6 +119,7 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 23px;
+
   &::after {
     content: " ";
     display: inline-block;
@@ -126,10 +128,7 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
     margin-left: 12px;
   }
-
-
-  }
-
+}
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .program__item {
@@ -213,6 +212,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .program__list-wrapper {
     position: relative;
@@ -226,7 +226,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 
   .program__description {
@@ -236,6 +236,7 @@
 
   .program__button {
     font-family: $title-font;
+
     @include tablet-fonts;
   }
 
@@ -246,6 +247,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .program__list {
     display: flex;
@@ -275,10 +277,10 @@
 
     &--pro::before {
       left: -20px;
-    top: 13px;
-    z-index: 1;
-    width: 135px;
-    height: 104px;
+      top: 13px;
+      z-index: 1;
+      width: 135px;
+      height: 104px;
     }
 
     &--pro::after {

@@ -13,35 +13,31 @@
   padding: 0 20px;
 }
 
-
 @media (min-width: $tablet-width) {
-.page-header__wrapper {
-  @include tablet-center;
-}
+  .page-header__wrapper {
+    @include tablet-center;
+  }
 
-.page-header__topline  {
-  width: auto;
-  display: block;
-  margin: 0;
-  padding: 0;
+  .page-header__topline {
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-@include desktop-center;
-position: relative;
-z-index: 2;
+    @include desktop-center;
+    position: relative;
+    z-index: 2;
   }
-
 
   .page-header__wrapper {
     max-width: $desktop-width;
     min-height: 140px;
     margin-left: auto;
     margin-right: auto;
-  padding: 0;
-    padding-top: 29px;
-
+    padding: 29px 0 0;
   }
 }
