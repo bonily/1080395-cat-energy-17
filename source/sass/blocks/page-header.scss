@@ -17,7 +17,6 @@
 @media (min-width: $tablet-width) {
 .page-header__wrapper {
   @include tablet-center;
-  padding-top: 40px;
 }
 
 .page-header__topline  {
@@ -31,15 +30,18 @@
 @media (min-width: $desktop-width) {
   .page-header {
 @include desktop-center;
+position: relative;
+z-index: 2;
   }
 
 
   .page-header__wrapper {
-    @include desktop-center ;
+    max-width: $desktop-width;
     min-height: 140px;
-    padding: 0;
-    padding-top: 73px;
-
+    margin-left: auto;
+    margin-right: auto;
+  padding: 0;
+    padding-top: 29px;
 
   }
 }

@@ -9,13 +9,13 @@
 
 .footer-logo {
   display: block;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  border-bottom: 2px solid $color-border;
+  padding-top: 39px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid $color-border;
 }
 
 .page-footer__social {
-  border-bottom: 2px solid $color-border;
+  border-bottom: 1px solid $color-border;
 }
 @media (min-width: $tablet-width) {
   .page-footer__container {
@@ -51,7 +51,6 @@
 }
 @media (min-width: $desktop-width) {
   .page-footer {
-    @include desktop-center;
     padding: 0;
   }
 
