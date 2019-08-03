@@ -27,14 +27,14 @@
   color: $color-title;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 0 29px 71px;
+  padding: 0 0 30px 71px;
 
   &--slim::before {
     content: " ";
     position: absolute;
     display: block;
     left: 3px;
-    top: -10px;
+    top: -9px;
     z-index: 1;
     width: 50px;
     height: 50px;
@@ -48,7 +48,7 @@
     position: absolute;
     display: block;
     left: 2px;
-    top: -8px;
+    top: -6px;
     z-index: 0;
     width: 50px;
     height: 50px;
@@ -85,7 +85,7 @@
 }
 
 .program__description {
-  padding: 0 0 22px;
+  padding: 0 0 21px;
   margin: 0;
   border-bottom: 1px solid #d9d9d9;
 }

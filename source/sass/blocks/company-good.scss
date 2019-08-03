@@ -1,5 +1,5 @@
 .company-good__wrapper {
-  background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $color-bg 306px, #ffffff 174px);
+  background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $color-bg 306px, #ffffff calc(100% - 306px));
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
@@ -9,7 +9,7 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .company-good__wrapper {
-    background: url("../img/index-background-mobile@2x.jpg") no-repeat center top, linear-gradient(to bottom, $color-bg 306px, #ffffff 174px);
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat center top, linear-gradient(to bottom, $color-bg 306px, #ffffff calc(100% - 306px));
     background-size: 320px auto;
   }
 }
@@ -21,7 +21,7 @@
 
 .company-good__main-title {
   @include section-title(#ffffff, 36px, 36px);
-  padding: 29px 0 24px;
+  padding: 26px 0 27px;
   margin: 0;
 }
 

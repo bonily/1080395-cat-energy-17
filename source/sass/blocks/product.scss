@@ -52,7 +52,6 @@
   padding-top: 11px;
   margin-bottom: 24px;
 }
-
 @media (min-width: $tablet-width) {
   .product {
     border-top: none;
@@ -118,7 +117,6 @@
     margin-bottom: 37px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .product {
     padding: 0 40px;
@@ -132,6 +130,10 @@
   .product__title {
     max-width: 90%;
     padding-top: 37px;
+  }
+
+  .product__composition {
+    margin-right: 38px;
   }
 
   .product__button {
