@@ -1,9 +1,15 @@
+.contact {
+  background-color: #ffffff;
+}
+
 .contact__text {
   @include mobile-center;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 25px;
+  padding-left: 19px;
+  padding-right: 19px;
   background-color: #ffffff;
 }
 
@@ -36,7 +42,7 @@
 .contact__map {
   position: relative;
   height: 364px;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat, $color-bg-block;
   background-position: center top -37px;
   background-size: 320px auto;
   background-clip: content-box;
@@ -119,6 +125,7 @@
 @media (min-width: $desktop-width) {
   .contact {
     position: relative;
+    background-color: #f2f2f2;
   }
 
   .contact__text {

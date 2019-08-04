@@ -6,7 +6,7 @@
 
 .program__item {
   background-color: $color-bg-block;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -61,7 +61,7 @@
     position: absolute;
     display: block;
     left: -7px;
-    top: 4px;
+    top: 5px;
     z-index: 1;
     width: 67px;
     height: 28px;
@@ -74,7 +74,7 @@
     content: " ";
     position: absolute;
     display: block;
-    top: -8px;
+    top: -6px;
     left: 2px;
     z-index: 0;
     width: 50px;
@@ -136,7 +136,7 @@
   }
 
   .program__title {
-    padding: 44px 0 22px;
+    padding: 44px 0 26px;
 
     &--slim::after,
     &--slim::before {
@@ -226,7 +226,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 36px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
 
   .program__description {
@@ -257,11 +257,11 @@
 
   .program__title {
     @include tablet-fonts(36px, 37px);
-    padding: 45px 0 0 163px;
+    padding: 46px 0 0 163px;
 
     &--slim::before {
       left: -4px;
-      top: 8px;
+      top: 9px;
       z-index: 1;
       width: 104px;
       height: 99px;
@@ -269,7 +269,7 @@
 
     &--slim::after {
       left: -1px;
-      top: 14px;
+      top: 17px;
       z-index: 0;
       width: 100px;
       height: 100px;
@@ -277,7 +277,7 @@
 
     &--pro::before {
       left: -20px;
-      top: 13px;
+      top: 15px;
       z-index: 1;
       width: 135px;
       height: 104px;
@@ -285,7 +285,7 @@
 
     &--pro::after {
       left: -1px;
-      top: 14px;
+      top: 17px;
       z-index: 0;
       width: 100px;
       height: 100px;
@@ -307,7 +307,7 @@
   }
 
   .program__description {
-    padding-top: 71px;
+    padding-top: 73px;
     padding-bottom: 11px;
   }
 }

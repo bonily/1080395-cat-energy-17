@@ -6,7 +6,7 @@
 .specification__title {
   @include section-title;
   padding: 0;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 
 .specification__list {
@@ -19,15 +19,15 @@
 .specification__item {
   position: relative;
   padding-left: 80px;
-  padding-top: 7px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 16px;
 
   &--sheet {
     &::before {
       content: " ";
       position: absolute;
       left: 0;
-      top: 5px;
+      top: 8px;
       width: 60px;
       height: 60px;
       background: url("../img/advantage-leaf@1x.png") no-repeat, $color-bg-btn;
@@ -40,7 +40,7 @@
       content: " ";
       position: absolute;
       left: 0;
-      top: 5px;
+      top: 8px;
       width: 60px;
       height: 60px;
       background: url("../img/advantage-powder@1x.png") no-repeat, $color-bg-btn;
@@ -53,7 +53,7 @@
       content: " ";
       position: absolute;
       left: 0;
-      top: 5px;
+      top: 8px;
       width: 60px;
       height: 60px;
       background: url("../img/advantage-dining@1x.png") no-repeat, $color-bg-btn;
@@ -66,7 +66,7 @@
       content: " ";
       position: absolute;
       left: 0;
-      top: 5px;
+      top: 8px;
       width: 60px;
       height: 60px;
       background: url("../img/advantage-clock@1x.png") no-repeat, $color-bg-btn;
@@ -74,7 +74,6 @@
     }
   }
 }
-
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .specification__item {
     &--sheet {
@@ -110,7 +109,6 @@
     }
   }
 }
-
 @media (min-width: 768px) and (max-width: 1299px) {
   .specification__item {
     &:nth-child(even) {
@@ -124,7 +122,6 @@
     }
   }
 }
-
 @media (min-width: $tablet-width) {
   .specification {
     @include tablet-center;
@@ -134,7 +131,7 @@
   .specification__title {
     @include section-title($color-title, 60px, 60px);
     padding-top: 33px;
-    padding-bottom: 46px;
+    padding-bottom: 53px;
   }
 
   .specification__list {
@@ -146,7 +143,7 @@
     @include tablet-fonts(16px, 24px);
     max-width: 50%;
     height: 230px;
-    padding-top: 114px;
+    padding-top: 112px;
     padding-left: 0;
     padding-right: 120px;
 
@@ -162,7 +159,6 @@
       top: -40px;
       left: 115px;
       font-family: $title-font;
-
       @include tablet-fonts(281px, 281px);
       color: #f2f2f2;
     }
@@ -208,7 +204,6 @@
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .specification {
     max-width: $desktop-width;
@@ -218,7 +213,8 @@
   }
 
   .specification__title {
-    padding-left: 42px;
+    padding-left: 40px;
+    padding-top: 35px;
   }
 
   .specification__list {
@@ -229,20 +225,33 @@
 
   .specification__item {
     max-width: 25%;
-    margin-right: 35px;
-    margin-left: 39px;
-    margin-bottom: 0;
+    padding-top: 112px;
     padding-right: 0;
+    margin-right: 35px;
+    margin-left: 38px;
+    margin-bottom: 0;
 
-    &:nth-child(even) {
+    &--appliances {
       &::before {
-        left: 0;
+        top: 0;
       }
     }
 
-    &:last-child {
-      margin-right: 39px;
-      margin-bottom: 0;
+    &--clock {
+      &::before {
+        top: 0;
+      }
+  }
+
+      &:nth-child(even) {
+        &::before {
+          left: 0;
+        }
+      }
+
+      &:last-child {
+        margin-right: 39px;
+        margin-bottom: 0;
+      }
     }
   }
-}
