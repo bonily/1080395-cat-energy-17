@@ -250,17 +250,16 @@ input.form__programm-input[type="checkbox"]:checked+span {
   .form__cat-name label {
     min-width: 54px;
     padding-top: 16px;
-
   }
 
   .form__cat-weight label {
     min-width: 85px;
-        padding-top: 16px;
+    padding-top: 16px;
   }
 
   .form__cat-age label {
     min-width: 124px;
-        padding-top: 16px;
+    padding-top: 16px;
   }
 
   .form__cat-input {
@@ -307,7 +306,7 @@ input.form__programm-input[type="checkbox"]:checked+span {
     padding-bottom: 64px;
     border-top: 3px solid $color-bg-btn;
 
-      &::after {
+    &::after {
       display: none;
     }
   }
@@ -316,7 +315,7 @@ input.form__programm-input[type="checkbox"]:checked+span {
     padding-left: 39px;
     padding-right: 41px;
     background-color: #ffffff;
-      margin-top: -37px;
+    margin-top: -37px;
   }
 
   .form__contact-title {
@@ -325,7 +324,6 @@ input.form__programm-input[type="checkbox"]:checked+span {
 
   .form__contact-title span {
     width: 593px;
-
   }
 
   .form__detail label {
@@ -333,93 +331,92 @@ input.form__programm-input[type="checkbox"]:checked+span {
   }
 
   .form__contact-email label {
-      width: 85px;
+    width: 85px;
+  }
 
-}
+  .form__contact-telefon {
+    padding-left: 68px;
+  }
 
-.form__contact-telefon {
-  padding-left: 68px;
-}
+  .form__contact-telefon label {
+    width: 111px;
+  }
 
-.form__contact-telefon label {
-width: 111px;
-}
+  .form__contact {
+    margin-bottom: 88px;
+  }
 
-.form__contact {
-  margin-bottom: 88px;
-}
+  .form__input-text {
+    height: 174px;
+  }
 
-.form__input-text {
-  height: 174px;
-}
+  .form__comment {
+    margin-bottom: 87px;
+  }
 
-.form__comment {
-  margin-bottom: 87px;
-}
+  .form__item-complete {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 44px;
+  }
 
-.form__item-complete {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 44px;
-}
+  .form__item-complete li {
+    width: 50%;
+    margin-bottom: 52px;
+  }
 
-.form__item-complete li {
-  width: 50%;
-  margin-bottom: 52px;
-}
+  input.form__programm-input[type="checkbox"]+span {
+    left: -8px;
+    top: -2px;
+    width: 40px;
+    height: 40px;
+  }
 
-input.form__programm-input[type="checkbox"]+span {
-  left: -8px;
-  top: -2px;
-  width: 40px;
-  height: 40px;
-}
-.form__item-complete label {
-padding-left: 51px;
-}
+  .form__item-complete label {
+    padding-left: 51px;
+  }
 
-.form__complete-title {
-  padding-bottom: 20px;
-}
+  .form__complete-title {
+    padding-bottom: 20px;
+  }
 
-.form__end {
-  display: flex;
-}
+  .form__end {
+    display: flex;
+  }
 
-.form__footnote {
-  width: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: left;
-  padding-left: 30px;
-}
+  .form__footnote {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    padding-left: 30px;
+  }
 
-.form__button {
-  max-width: none;
-  width: 283px;
-  height: 52px;
-  font-size: 20px;
-  line-height: 20px;
-  padding-left: 2px;
-  margin-left: auto;
-  margin-right: 30px;
-  margin-bottom: 0;
-}
+  .form__button {
+    max-width: none;
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 2px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 
-.form__complete {
-  margin-bottom: 13px;
-}
+  .form__complete {
+    margin-bottom: 13px;
+  }
 
-.form__footnote {
-  font-size: 16px;
-  line-height: 16px;
+  .form__footnote {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
-}
-
 @media (min-width: $desktop-width) {
-.form {
-  margin-bottom: 82px;
-}
+  .form {
+    margin-bottom: 82px;
+  }
 
   .form__title {
     padding-left: 40px;
@@ -441,7 +438,6 @@ padding-left: 51px;
     padding-right: 70%;
     padding-left: 0;
     padding-bottom: 69px;
-
   }
 
   .form__cat {
@@ -476,68 +472,80 @@ padding-left: 51px;
     width: 563px;
     padding-left: 9px;
     padding-right: 13px;
-}
+  }
 
-.form__contact-comtsiner {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-}
+  .form__contact-comtsiner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
 
-.form__contact-email,
-.form__contact-telefon {
-  width: 50%;
-}
-.form__contact-telefon {
-  padding-left: 40px;
-  padding-right: 0;
-}
-.form__contact {
-  margin-bottom: 69px;
-}
-.form__comment-title span {
-  width: 230px;
-}
-.form__comment-text {
-  padding-left: 40px;
-}
-.form__comment {
-  margin-bottom: 89px;
-}
-.form__complete-title span {
-  width: 260px;
-}
-.form__item-complete li {
-  width: 245px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.form__complete-detail {
-  padding-left: 0;
-  padding-top: 34px;
-}
-.form__item-complete {
-  padding-left: 0;
-  padding-right: 0;
-  justify-content: space-between;
-}
-.form__item-complete label {
-  padding-left: 57px;
-}
+  .form__contact-email,
+  .form__contact-telefon {
+    width: 50%;
+  }
 
-input.form__programm-input[type="checkbox"] + span {
-    left: 0px;
-    top: -3px;
-}
-.form__complete {
-  margin-bottom: 20px;
-}
+  .form__contact-telefon {
+    padding-left: 40px;
+    padding-right: 0;
+  }
 
-.form__button {
-  width: 570px;
+  .form__contact {
+    margin-bottom: 69px;
+  }
+
+  .form__comment-title span {
+    width: 230px;
+  }
+
+  .form__comment-text {
+    padding-left: 40px;
+  }
+
+  .form__comment {
+    margin-bottom: 89px;
+  }
+
+  .form__complete-title span {
+    width: 260px;
+  }
+
+  .form__item-complete li {
+    width: 245px;
+    margin-left: 40px;
     margin-right: 40px;
-}
-.form__footnote {
-  padding-left: 41px;
-}
+  }
+
+  .form__complete-detail {
+    padding-left: 0;
+    padding-top: 34px;
+  }
+
+  .form__item-complete {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+  }
+
+  .form__item-complete label {
+    padding-left: 57px;
+  }
+
+  input.form__programm-input[type="checkbox"] + span {
+    left: 0;
+    top: -3px;
+  }
+
+  .form__complete {
+    margin-bottom: 20px;
+  }
+
+  .form__button {
+    width: 570px;
+    margin-right: 40px;
+  }
+
+  .form__footnote {
+    padding-left: 41px;
+  }
 }
