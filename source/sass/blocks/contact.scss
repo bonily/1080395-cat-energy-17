@@ -2,6 +2,10 @@
   background-color: #ffffff;
 }
 
+.contact--form {
+background-color: $color-bg-block;
+}
+
 .contact__text {
   @include mobile-center;
   display: flex;
@@ -10,7 +14,7 @@
   padding-bottom: 25px;
   padding-left: 19px;
   padding-right: 19px;
-  background-color: #ffffff;
+
 }
 
 .contact__text-invitation {
@@ -64,6 +68,11 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .contact--form {
+  background-color: $color-bg-block;
+  }
+
   .contact__text {
     @include tablet-center;
     padding-top: 67px;
