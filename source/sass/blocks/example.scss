@@ -1,38 +1,191 @@
 .example-wrapper {
-  @include mobile-center;
-  min-height: 658px;
+  background-color: $color-bg-block;
+  padding: 0 20px;
 }
 
 .example__title {
   @include section-title;
+  max-width: 320px;
   margin: 0;
+  padding: 17px 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example-container {
+  @include mobile-center;
   padding: 0;
+}
+
+.example__description-text {
+  padding: 0 12px 0 0;
+  margin: 0;
+}
+
+.example__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example__description-details {
+  display: block;
+  width: 124px;
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-title;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  padding-top: 15px;
+}
+
+.example__description-details small {
+  display: block;
+  max-width: 87px;
+  min-width: 87px;
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-text;
+  background-color: $color-bg-block;
+  text-transform: none;
+  padding: 0 5px;
+  margin: 8px auto -16px;
+}
+
+.example__description-cost {
+  display: block;
+  font-family: $title-font;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 0;
+  margin: 0 auto 32px;
 }
 @media (min-width: $tablet-width) {
   .example {
-    border-top: 2px solid $color-border;
+    border-top: 1px solid $color-border;
   }
 
   .example-wrapper {
-    @include tablet-center;
-    min-height: 658px;
+    padding: 0 30px;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
+    background-size: auto 463px;
+    background-position: bottom;
   }
 
   .example__title {
     @include section-title($color-title, 60px, 60px);
+    max-width: $tablet-width;
     padding-top: 42px;
+    padding-bottom: 65px;
+  }
+
+  .example-container {
+    @include tablet-center;
+    padding: 0;
+  }
+
+  .example__description-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__description-details {
+    @include tablet-fonts(30px,37px);
+    width: 163px;
+    margin-top: 51px;
+    margin-right: 42px;
+  }
+
+  .example__description-details small {
+    @include tablet-fonts(14px,14px);
+    min-width: 114px;
+    max-width: 144px;
+    padding: 0;
+    margin: 11px auto -6px;
+  }
+
+  .example__description-cost {
+    @include tablet-fonts(20px,28px);
+    max-width: 25%;
+    text-align: right;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 7px;
+    margin-right: 0;
+    margin-top: auto;
+  }
+
+  .example__description-wrapper {
+    margin-bottom: 54px;
   }
 }
 @media (min-width: $desktop-width) {
   .example {
     border-top: none;
-  }
+    min-height: 0;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
+    background-size: auto 463px;
+    background-position: bottom;
+}
 
   .example-wrapper {
-    @include desktop-center;
+    padding: 0;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
+    background-size: auto 463px;
+    background-position: calc(50% + 325px) bottom;
+
+
   }
 
   .example__title {
-    padding-top: 90px;
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .example-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin-top: -180px;
+  }
+
+  .example__description {
+    max-width: 570px;
+    margin-top: auto;
+  }
+
+  .example__description-text {
+    padding-left: 40px;
+    padding-right: 98px;
+    padding-bottom: 67px;
+  }
+
+  .example__description-details {
+    margin-right: 40px;
+    margin-top: 0;
+    margin-bottom: 54px;
+    padding-top: 16px;
+}
+
+.example__description-wrapper {
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+  .example__description-cost {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+    width: 328px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 18px;
+   }
 }

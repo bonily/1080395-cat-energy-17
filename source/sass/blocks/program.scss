@@ -6,7 +6,7 @@
 
 .program__item {
   background-color: $color-bg-block;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -27,14 +27,14 @@
   color: $color-title;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 0 28px 72px;
+  padding: 0 0 30px 71px;
 
   &--slim::before {
     content: " ";
     position: absolute;
     display: block;
     left: 3px;
-    top: -10px;
+    top: -9px;
     z-index: 1;
     width: 50px;
     height: 50px;
@@ -48,7 +48,7 @@
     position: absolute;
     display: block;
     left: 2px;
-    top: -8px;
+    top: -6px;
     z-index: 0;
     width: 50px;
     height: 50px;
@@ -60,8 +60,8 @@
     content: " ";
     position: absolute;
     display: block;
-    left: -6px;
-    top: 3px;
+    left: -7px;
+    top: 5px;
     z-index: 1;
     width: 67px;
     height: 28px;
@@ -74,7 +74,7 @@
     content: " ";
     position: absolute;
     display: block;
-    top: -8px;
+    top: -6px;
     left: 2px;
     z-index: 0;
     width: 50px;
@@ -85,9 +85,9 @@
 }
 
 .program__description {
-  padding: 0 0 22px;
+  padding: 0 0 21px;
   margin: 0;
-  border-bottom: 2px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__button {
@@ -97,18 +97,20 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+
   &:hover .program__catalog::after {
     width: 33px;
-        background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-    }
-    &:active {
-      opacity: 0.3;
-    }
-    &:active .program__catalog::after {
-      width: 33px;
-          background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
 
-      }
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .program__catalog::after {
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
 }
 
 .program__catalog {
@@ -117,6 +119,7 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 23px;
+
   &::after {
     content: " ";
     display: inline-block;
@@ -125,10 +128,7 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
     margin-left: 12px;
   }
-
-
-  }
-
+}
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .program__item {
@@ -136,7 +136,7 @@
   }
 
   .program__title {
-    padding: 45px 0 22px;
+    padding: 44px 0 26px;
 
     &--slim::after,
     &--slim::before {
@@ -157,7 +157,7 @@
       content: " ";
       position: absolute;
       display: block;
-      top: 79px;
+      top: 75px;
       right: 91px;
       z-index: 1;
       width: 141px;
@@ -171,7 +171,7 @@
       content: " ";
       position: absolute;
       display: block;
-      top: 92px;
+      top: 90px;
       right: 61px;
       z-index: 0;
       width: 200px;
@@ -212,6 +212,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .program__list-wrapper {
     position: relative;
@@ -224,8 +225,8 @@
   .program__item {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 38px;
-    margin-bottom: 30px;
+    padding-bottom: 36px;
+    margin-bottom: 33px;
   }
 
   .program__description {
@@ -235,6 +236,7 @@
 
   .program__button {
     font-family: $title-font;
+
     @include tablet-fonts;
   }
 
@@ -245,6 +247,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .program__list {
     display: flex;
@@ -254,11 +257,11 @@
 
   .program__title {
     @include tablet-fonts(36px, 37px);
-    padding: 45px 0 0 163px;
+    padding: 46px 0 0 163px;
 
     &--slim::before {
       left: -4px;
-      top: 8px;
+      top: 9px;
       z-index: 1;
       width: 104px;
       height: 99px;
@@ -266,7 +269,7 @@
 
     &--slim::after {
       left: -1px;
-      top: 14px;
+      top: 17px;
       z-index: 0;
       width: 100px;
       height: 100px;
@@ -274,15 +277,15 @@
 
     &--pro::before {
       left: -20px;
-    top: 13px;
-    z-index: 1;
-    width: 135px;
-    height: 104px;
+      top: 15px;
+      z-index: 1;
+      width: 135px;
+      height: 104px;
     }
 
     &--pro::after {
       left: -1px;
-      top: 14px;
+      top: 17px;
       z-index: 0;
       width: 100px;
       height: 100px;
@@ -304,7 +307,7 @@
   }
 
   .program__description {
-    padding-top: 71px;
+    padding-top: 73px;
     padding-bottom: 11px;
   }
 }

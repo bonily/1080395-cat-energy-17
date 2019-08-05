@@ -1,8 +1,9 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -24,5 +25,5 @@ body {
 a {
   text-decoration: none;
   color: $color-title;
-    cursor: pointer;
+  cursor: pointer;
 }

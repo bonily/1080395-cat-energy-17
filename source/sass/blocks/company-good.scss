@@ -1,12 +1,17 @@
 .company-good__wrapper {
-  background:
-  url("../img/index-background-mobile@1x.jpg"),
-  linear-gradient(to bottom, $color-bg 306px, #ffffff 174px);
+  background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $color-bg 306px, #ffffff calc(100% - 306px));
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
   min-height: 480px;
-  border-top: 2px solid $color-border;
+  border-top: 1px solid $color-border;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .company-good__wrapper {
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat center top, linear-gradient(to bottom, $color-bg 306px, #ffffff calc(100% - 306px));
+    background-size: 320px auto;
+  }
 }
 
 .company-good__container {
@@ -16,7 +21,7 @@
 
 .company-good__main-title {
   @include section-title(#ffffff, 36px, 36px);
-  padding: 29px 0 22px;
+  padding: 26px 0 27px;
   margin: 0;
 }
 
@@ -25,7 +30,7 @@
   color: #ffffff;
   line-height: 14px;
   text-transform: uppercase;
-  padding: 0 0 30px;
+  padding: 0 0 28px;
   margin: 0;
 }
 
@@ -36,6 +41,7 @@
 .company-good__program {
   @include mobile-center;
 }
+
 @media (min-width: $tablet-width) {
   .company-good__wrapper {
     background: #ffffff;
@@ -44,8 +50,8 @@
   }
 
   .company-good__container {
-    position: relative;
     @include tablet-center;
+    position: relative;
     text-align: center;
     margin-bottom: 0;
   }
@@ -54,8 +60,8 @@
     @include section-title($color-title, 60px, 60px);
     text-align: left;
     max-width: 505px;
-    padding-top: 35px;
-    padding-bottom: 42px;
+    padding-top: 44px;
+    padding-bottom: 43px;
     padding-left: 87px;
   }
 
@@ -64,18 +70,19 @@
     color: $color-title;
     text-align: left;
     text-transform: uppercase;
-    padding-left: 87px;
+    padding-left: 89px;
     padding-bottom: 20px;
   }
 
   .company-good__image {
-
+    width: 709px;
+    height: 609px;
   }
 
   .company-good_button {
     @include tablet-fonts;
     position: absolute;
-    top: 264px;
+    top: 275px;
     left: 118px;
     height: 52px;
     padding-top: 17px;
@@ -85,43 +92,52 @@
     @include tablet-center;
   }
 }
-@media (min-width: $desktop-width) {
 
+@media (min-width: $desktop-width) {
   .company-good {
     margin-top: -140px;
     z-index: -1;
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .company-good__wrapper {
-    background:
-     url("../img/index-background-desktop@1x.jpg") calc(50% + 360px),
-    linear-gradient(to right, #ffffff 50%, $color-bg 50%) center;
+    background: url("../img/index-background-desktop@1x.jpg") calc(50% + 360px), linear-gradient(to right, #ffffff 50%, $color-bg 50%) center;
     background-repeat: no-repeat;
-    background-clip: padding-box;
-    background-attachment:  scroll;
-    background-size: auto, 1440px;
+    background-attachment: scroll;
+    background-size: auto, auto;
     background-clip: content-box;
     margin-left: auto;
     margin-right: auto;
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .company-good__wrapper {
+      background: url("../img/index-background-desktop@2x.jpg") calc(50% + 360px), linear-gradient(to right, #ffffff 50%, $color-bg 50%) center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: 720px auto, auto;
+      background-clip: content-box;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .company-good__container {
-    position: relative;
     @include desktop-center;
+    position: relative;
     max-width: 1300px;
     min-height: 695px;
     margin-bottom: 83px;
-
   }
-  .company-good__main-title  {
+
+  .company-good__main-title {
     max-width: 500px;
-    padding-top: 220px;
+    padding-top: 222px;
     padding-left: 80px;
     z-index: -15;
   }
+
   .company-good__tagline {
     padding-bottom: 50px;
     padding-left: 80px;
@@ -134,7 +150,6 @@
     transform: translate(-160px);
     width: auto;
     height: 499px;
-
   }
 
   .company-good_button {
@@ -142,7 +157,12 @@
     max-width: 245px;
     height: 55px;
     top: 0;
-margin-left: -40px;
+    margin-left: -40px;
+  }
+}
 
+@media (min-width: 1440px) {
+  .company-good__wrapper {
+    background-position: right, center;
   }
 }

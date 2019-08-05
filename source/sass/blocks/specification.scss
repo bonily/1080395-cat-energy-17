@@ -1,13 +1,12 @@
 .specification {
   @include mobile-center;
-  margin-bottom: 63px;
+  margin-bottom: 45px;
 }
 
 .specification__title {
   @include section-title;
   padding: 0;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0 0 20px;
 }
 
 .specification__list {
@@ -20,79 +19,110 @@
 .specification__item {
   position: relative;
   padding-left: 80px;
-  padding-top: 7px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 16px;
+
   &--sheet {
     &::before {
       content: " ";
       position: absolute;
       left: 0;
-      top: 2px;
+      top: 8px;
       width: 60px;
       height: 60px;
-      background: url("../img/advantage-leaf@1x.png") no-repeat,
-      $color-bg-btn;
+      background: url("../img/advantage-leaf@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
     }
   }
+
   &--water {
     &::before {
       content: " ";
       position: absolute;
       left: 0;
-      top: 2px;
+      top: 8px;
       width: 60px;
       height: 60px;
-      background: url("../img/advantage-powder@1x.png") no-repeat,
-    $color-bg-btn;
+      background: url("../img/advantage-powder@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
     }
   }
+
   &--appliances {
     &::before {
       content: " ";
       position: absolute;
       left: 0;
-      top: 2px;
+      top: 8px;
       width: 60px;
       height: 60px;
-      background: url("../img/advantage-dining@1x.png") no-repeat,
-      $color-bg-btn;
+      background: url("../img/advantage-dining@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
     }
   }
+
   &--clock {
     &::before {
       content: " ";
       position: absolute;
       left: 0;
-      top: 2px;
+      top: 8px;
       width: 60px;
       height: 60px;
-      background: url("../img/advantage-clock@1x.png") no-repeat,
-    $color-bg-btn;
+      background: url("../img/advantage-clock@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
     }
   }
 }
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .specification__item {
+    &--sheet {
+      &::before {
+        background: url("../img/advantage-leaf@2x.png") no-repeat, $color-bg-btn;
+        background-size: 50px 50px, auto;
+        background-position: center;
+      }
+    }
 
+    &--water {
+      &::before {
+        background: url("../img/advantage-powder@2x.png") no-repeat, $color-bg-btn;
+        background-size: 50px 50px, auto;
+        background-position: center;
+      }
+    }
 
+    &--appliances {
+      &::before {
+        background: url("../img/advantage-dining@2x.png") no-repeat, $color-bg-btn;
+        background-size: 50px 50px, auto;
+        background-position: center;
+      }
+    }
+
+    &--clock {
+      &::before {
+        background: url("../img/advantage-clock@2x.png") no-repeat, $color-bg-btn;
+        background-size: 50px 50px, auto;
+        background-position: center;
+      }
+    }
+  }
+}
 @media (min-width: 768px) and (max-width: 1299px) {
-
   .specification__item {
     &:nth-child(even) {
       padding-left: 29px;
       padding-right: 80px;
       margin-bottom: 87px;
+
       &::after {
         left: 142px;
       }
+    }
+  }
 }
-}
-}
-
 @media (min-width: $tablet-width) {
-
   .specification {
     @include tablet-center;
     margin-bottom: 0;
@@ -101,7 +131,7 @@
   .specification__title {
     @include section-title($color-title, 60px, 60px);
     padding-top: 33px;
-    padding-bottom: 46px;
+    padding-bottom: 53px;
   }
 
   .specification__list {
@@ -113,24 +143,26 @@
     @include tablet-fonts(16px, 24px);
     max-width: 50%;
     height: 230px;
-    padding-top: 114px;
+    padding-top: 112px;
     padding-left: 0;
     padding-right: 120px;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 57px;
     }
+
     &::after {
       counter-increment: myCounter;
-      content:counter(myCounter);
+      content: counter(myCounter);
       position: absolute;
       z-index: -1;
-      top: -40px;;
+      top: -40px;
       left: 115px;
       font-family: $title-font;
       @include tablet-fonts(281px, 281px);
       color: #f2f2f2;
-
     }
+
     &--sheet {
       &::before {
         content: " ";
@@ -140,6 +172,7 @@
         height: 80px;
       }
     }
+
     &--water {
       &::before {
         content: " ";
@@ -149,6 +182,7 @@
         height: 80px;
       }
     }
+
     &--appliances {
       &::before {
         content: " ";
@@ -158,6 +192,7 @@
         height: 80px;
       }
     }
+
     &--clock {
       &::before {
         content: " ";
@@ -166,44 +201,57 @@
         width: 80px;
         height: 80px;
       }
+    }
   }
 }
-}
+@media (min-width: $desktop-width) {
+  .specification {
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 
+  .specification__title {
+    padding-left: 40px;
+    padding-top: 35px;
+  }
 
+  .specification__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 
-    @media (min-width: $desktop-width) {
+  .specification__item {
+    max-width: 25%;
+    padding-top: 112px;
+    padding-right: 0;
+    margin-right: 35px;
+    margin-left: 38px;
+    margin-bottom: 0;
 
-      .specification {
-        max-width: $desktop-width;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
+    &--appliances {
+      &::before {
+        top: 0;
       }
-      .specification__title {
-        padding-left: 42px;
+    }
+
+    &--clock {
+      &::before {
+        top: 0;
+      }
+  }
+
+      &:nth-child(even) {
+        &::before {
+          left: 0;
+        }
       }
 
-      .specification__list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-      }
-
-      .specification__item {
-        max-width: 25%;
-        margin-right: 35px;
-        margin-left: 39px;
+      &:last-child {
+        margin-right: 39px;
         margin-bottom: 0;
-        padding-right: 0;
-        &:nth-child(even) {
-          &::before {
-            left: 0;
-          }
-        }
-        &:last-child {
-          margin-right: 39px;
-          margin-bottom: 0;
-        }
       }
-}
+    }
+  }

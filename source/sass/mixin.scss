@@ -21,13 +21,13 @@
 }
 
 @mixin desktop-center {
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 40px;
 }
 
-@mixin tablet-fonts ($size: 20px, $height: 20px){
+@mixin tablet-fonts ($size: 20px, $height: 20px) {
   font-size: $size;
   line-height: $height;
 }
