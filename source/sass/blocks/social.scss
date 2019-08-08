@@ -69,3 +69,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social__link {
+    &--vkontakte svg {
+    margin-top: 10px;
+    }
+    &--instagram svg {
+    margin-top: 7px;
+    }
+
+    &--facebook svg {
+      margin-top: 4px;
+    }
+}
+}

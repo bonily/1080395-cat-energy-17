@@ -6,6 +6,11 @@
   line-height: $height;
 }
 
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @mixin mobile-center {
   max-width: 320px;
   padding: 0 20px;

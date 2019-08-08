@@ -18,6 +18,15 @@
 
 .copyright__image {
   padding-top: 17px;
+
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      filter: none;
+      opacity: 0.3;
+    }
 }
 
 @media (min-width: $tablet-width) {
