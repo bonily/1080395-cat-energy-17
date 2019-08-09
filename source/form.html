@@ -6,6 +6,7 @@
   <title>CAT ENERGY.Функциональное питание для котов.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.mine.css" rel="stylesheet">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -50,15 +51,15 @@
           <div class="form__cat">
             <p class="form__cat-name form__detail">
               <label for="cat-name">Имя:*</label>
-              <input class="form__input-text" type="text" id="cat-name" placeholder="БАРСИК">
+              <input class="form__input-text form__name" type="text" id="cat-name" placeholder="БАРСИК">
             </p>
             <p class="form__cat-weight form__detail">
               <label for="cat-weight">Вес (кг):*</label>
-              <input class="form__input-text" type="text" id="cat-weight" placeholder="7">
+              <input class="form__input-text form__weight" type="text" id="cat-weight" placeholder="7">
             </p>
             <p class="form__cat-age form__detail">
               <label for="cat-age">Возраст (лет):</label>
-              <input class="form__input-text" type="text" id="cat-age" placeholder="7">
+              <input class="form__input-text form__age" type="text" id="cat-age" placeholder="7">
             </p>
           </div>
           <div class="form__about-wrapper">
@@ -93,7 +94,7 @@
               </p>
               <p class="form__contact-phone form__detail">
                 <label for="number">Телефон:*</label>
-                <input class="form__input-text" type="tel" id="number" placeholder="8 (960) 900-60-90">
+                <input class="form__input-text form__phone" type="tel" id="number" placeholder="8 (960) 900-60-90">
                 <svg class="form__svg-phone" width="20" height="20" viewBox="0 0 20 20" fill="#666666">
                   <use xlink:href="#icon-phone"></use></svg>
               </p>
@@ -139,9 +140,9 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contact">
+    <section class="contact contact--form">
       <h2 class="contact__title visually-hidden">Контакты</h2>
-      <div class="contact__text">
+      <div class="contact__text contact__text--form">
         <p class="contact__text-invitation">
           приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
@@ -192,9 +193,7 @@
     </div>
   </footer>
 
-  <script src="js/slaider.js"></script>
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/menu.js"></script>
+  <script src="js/all.js"></script>
 </body>
 
 </html>

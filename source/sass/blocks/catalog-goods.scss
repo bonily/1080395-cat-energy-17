@@ -66,6 +66,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-goods {
+    margin-bottom: 39px;
+  }
+
   .catalog-goods__wrapper {
     width: $desktop-width;
   }

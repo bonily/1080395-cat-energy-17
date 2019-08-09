@@ -1,5 +1,9 @@
 .contact {
   background-color: #ffffff;
+  &--form,
+  &--catalog {
+    background-color: $color-bg-block;
+  }
 }
 
 .contact--form {

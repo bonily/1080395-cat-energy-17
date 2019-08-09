@@ -234,12 +234,14 @@
     &--appliances {
       &::before {
         top: 0;
+        background-position: center;
       }
     }
 
     &--clock {
       &::before {
         top: 0;
+        background-position: center;
       }
   }
 
