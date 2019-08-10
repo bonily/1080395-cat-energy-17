@@ -1,15 +1,16 @@
 .page-header__wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .page-header__topline {
   display: flex;
   justify-content: space-between;
+
   width: 320px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding: 0 20px;
 }
 
@@ -19,8 +20,9 @@
   }
 
   .page-header__topline {
-    width: auto;
     display: block;
+
+    width: auto;
     margin: 0;
     padding: 0;
   }
@@ -28,16 +30,17 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include desktop-center;
     position: relative;
     z-index: 2;
+
+    @include desktop-center;
   }
 
   .page-header__wrapper {
     max-width: $desktop-width;
     min-height: 140px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 29px 0 0;
   }
 }

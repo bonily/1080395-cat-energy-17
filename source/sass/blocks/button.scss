@@ -1,13 +1,17 @@
 .button {
   display: block;
+
   max-width: 280px;
   min-height: 40px;
-  font-family: $title-font;
-  color: #ffffff;
-  background-color: $color-bg-btn;
+  margin: auto;
+
   text-align: center;
   text-transform: uppercase;
-  margin: auto;
+
+  color: #ffffff;
+  background-color: $color-bg-btn;
+
+  font-family: $title-font;
 
   &:hover {
     background-color: $color-hv-btn;
