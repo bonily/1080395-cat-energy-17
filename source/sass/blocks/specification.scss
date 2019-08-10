@@ -1,120 +1,143 @@
 .specification {
-  @include mobile-center;
   margin-bottom: 45px;
+
+  @include mobile-center;
 }
 
 .specification__title {
-  @include section-title;
-  padding: 0;
   margin: 0 0 20px;
+  padding: 0;
+
+  @include section-title;
 }
 
 .specification__list {
-  counter-reset: myCounter;
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: myCounter;
 }
 
 .specification__item {
   position: relative;
-  padding-left: 80px;
-  padding-top: 10px;
+
   margin-bottom: 16px;
+  padding-top: 10px;
+  padding-left: 80px;
 
   &--sheet {
     &::before {
-      content: " ";
       position: absolute;
-      left: 0;
       top: 8px;
+      left: 0;
+
       width: 60px;
       height: 60px;
+
+      content: " ";
+
       background: url("../img/advantage-leaf@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
+      background-size: 50px 50px, auto;
     }
   }
 
   &--water {
     &::before {
-      content: " ";
       position: absolute;
-      left: 0;
       top: 8px;
+      left: 0;
+
       width: 60px;
       height: 60px;
+
+      content: " ";
+
       background: url("../img/advantage-powder@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
+      background-size: 50px 50px, auto;
     }
   }
 
   &--appliances {
     &::before {
-      content: " ";
       position: absolute;
-      left: 0;
       top: 8px;
+      left: 0;
+
       width: 60px;
       height: 60px;
+
+      content: " ";
+
       background: url("../img/advantage-dining@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
+      background-size: 50px 50px, auto;
     }
   }
 
   &--clock {
     &::before {
-      content: " ";
       position: absolute;
-      left: 0;
       top: 8px;
+      left: 0;
+
       width: 60px;
       height: 60px;
+
+      content: " ";
+
       background: url("../img/advantage-clock@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
+      background-size: 50px 50px, auto;
     }
   }
 }
+
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .specification__item {
     &--sheet {
       &::before {
         background: url("../img/advantage-leaf@2x.png") no-repeat, $color-bg-btn;
-        background-size: 50px 50px, auto;
         background-position: center;
+        background-size: 50px 50px, auto;
       }
     }
 
     &--water {
       &::before {
         background: url("../img/advantage-powder@2x.png") no-repeat, $color-bg-btn;
-        background-size: 50px 50px, auto;
         background-position: center;
+        background-size: 50px 50px, auto;
       }
     }
 
     &--appliances {
       &::before {
         background: url("../img/advantage-dining@2x.png") no-repeat, $color-bg-btn;
-        background-size: 50px 50px, auto;
         background-position: center;
+        background-size: 50px 50px, auto;
       }
     }
 
     &--clock {
       &::before {
         background: url("../img/advantage-clock@2x.png") no-repeat, $color-bg-btn;
-        background-size: 50px 50px, auto;
         background-position: center;
+        background-size: 50px 50px, auto;
       }
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 1299px) {
   .specification__item {
     &:nth-child(even) {
-      padding-left: 29px;
-      padding-right: 80px;
       margin-bottom: 87px;
+      padding-right: 80px;
+      padding-left: 29px;
 
       &::after {
         left: 142px;
@@ -122,16 +145,19 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .specification {
-    @include tablet-center;
     margin-bottom: 0;
+
+    @include tablet-center;
   }
 
   .specification__title {
-    @include section-title($color-title, 60px, 60px);
     padding-top: 33px;
     padding-bottom: 53px;
+
+    @include section-title($color-title, 60px, 60px);
   }
 
   .specification__list {
@@ -140,100 +166,124 @@
   }
 
   .specification__item {
-    @include tablet-fonts(16px, 24px);
     max-width: 50%;
     height: 230px;
     padding-top: 112px;
-    padding-left: 0;
     padding-right: 120px;
+    padding-left: 0;
+
+    @include tablet-fonts(16px, 24px);
 
     &:last-child {
       margin-bottom: 57px;
     }
 
     &::after {
-      counter-increment: myCounter;
-      content: counter(myCounter);
       position: absolute;
       z-index: -1;
       top: -40px;
       left: 115px;
-      font-family: $title-font;
-      @include tablet-fonts(281px, 281px);
+
+      content: counter(myCounter);
+      counter-increment: myCounter;
+
       color: #f2f2f2;
+
+      font-family: $title-font;
+
+      @include tablet-fonts(281px, 281px);
     }
 
     &--sheet {
       &::before {
-        content: " ";
-        left: 0;
         top: 0;
+        left: 0;
+
         width: 80px;
         height: 80px;
+
+        content: " ";
+
+        background-position: center;
+
       }
     }
 
     &--water {
       &::before {
-        content: " ";
-        left: 29px;
         top: 0;
+        left: 29px;
+
         width: 80px;
         height: 80px;
+
+        content: " ";
+
+        background-position: center;
       }
     }
 
     &--appliances {
       &::before {
-        content: " ";
+        top: 0;
         left: 0;
-        top: 2px;
+
         width: 80px;
         height: 80px;
+
+        content: " ";
+
+        background-position: center;
       }
     }
 
     &--clock {
       &::before {
-        content: " ";
+        top: 0;
         left: 29px;
-        top: 2px;
+
         width: 80px;
         height: 80px;
+
+        content: " ";
+
+        background-position: center;
       }
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .specification {
     max-width: $desktop-width;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 0;
   }
 
   .specification__title {
-    padding-left: 40px;
     padding-top: 35px;
+    padding-left: 40px;
   }
 
   .specification__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .specification__item {
     max-width: 25%;
+    margin-right: 35px;
+    margin-bottom: 0;
+    margin-left: 38px;
     padding-top: 112px;
     padding-right: 0;
-    margin-right: 35px;
-    margin-left: 38px;
-    margin-bottom: 0;
 
     &--appliances {
       &::before {
         top: 0;
+
         background-position: center;
       }
     }
@@ -241,19 +291,20 @@
     &--clock {
       &::before {
         top: 0;
+
         background-position: center;
       }
-  }
+    }
 
-      &:nth-child(even) {
-        &::before {
-          left: 0;
-        }
-      }
-
-      &:last-child {
-        margin-right: 39px;
-        margin-bottom: 0;
+    &:nth-child(even) {
+      &::before {
+        left: 0;
       }
     }
+
+    &:last-child {
+      margin-right: 39px;
+      margin-bottom: 0;
+    }
   }
+}

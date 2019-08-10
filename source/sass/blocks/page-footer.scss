@@ -1,5 +1,6 @@
 .page-footer {
   width: 100%;
+
   background-color: $color-bg-block;
 }
 
@@ -9,8 +10,10 @@
 
 .footer-logo {
   display: block;
+
   padding-top: 39px;
   padding-bottom: 31px;
+
   border-bottom: 1px solid $color-border;
 }
 
@@ -20,14 +23,16 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
-    @include tablet-center;
     display: flex;
     justify-content: space-between;
+
+    @include tablet-center;
   }
 
   .footer-logo {
     padding-top: 62px;
     padding-bottom: 62px;
+
     border-bottom: none;
 
     &:hover {
@@ -42,6 +47,7 @@
   .page-footer__social {
     padding-top: 38px;
     padding-bottom: 43px;
+
     border-bottom: none;
   }
 
@@ -61,8 +67,8 @@
 
   .page-footer__container {
     max-width: $desktop-width;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 0 40px;
   }
 }

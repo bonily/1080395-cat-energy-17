@@ -9,21 +9,24 @@ html {
 }
 
 body {
-  min-width: 320px;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $color-text;
-  background-color: #ffffff;
   box-sizing: border-box;
+  min-width: 320px;
   margin: 0;
   padding: 0;
+
+  color: $color-text;
+  background-color: #ffffff;
+
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
 }
 
 a {
-  text-decoration: none;
-  color: $color-title;
   cursor: pointer;
+  text-decoration: none;
+
+  color: $color-title;
 }

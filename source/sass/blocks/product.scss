@@ -1,74 +1,90 @@
 .product {
   display: flex;
   flex-wrap: wrap;
+
   border-top: 1px solid $color-border;
 }
 
 .product-wrapper {
-  @include mobile-center;
   display: flex;
   flex-wrap: wrap;
+
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 18px;
 }
 
 .product__item-image {
   display: block;
+
   font-size: 0;
   line-height: 0;
 }
 
 .product__composition {
   min-width: 144px;
+
   font-size: 12px;
   line-height: 16px;
 }
 
 .product__title {
   max-width: 68%;
+  padding: 22px 0 8px 2px;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  color: $color-title;
+
   font-family: $title-font;
   font-size: 16px;
-  color: $color-title;
   font-weight: 400;
   line-height: 20px;
-  text-transform: uppercase;
-  text-align: left;
-  padding: 22px 0 8px 2px;
 }
 
 .product__element {
-  text-align: left;
   padding: 0;
+
+  text-align: left;
 }
 
 .product__element-property {
-  text-align: right;
   padding: 0;
+
+  text-align: right;
 }
 
 .product__button {
   min-width: 280px;
+  margin-bottom: 24px;
+  padding-top: 11px;
+
   font-size: 16px;
   line-height: 20px;
-  padding-top: 11px;
-  margin-bottom: 24px;
 }
+
 @media (min-width: $tablet-width) {
   .product {
-    border-top: none;
     margin-bottom: 61px;
+
+    border-top: none;
   }
 
   .product-wrapper {
-    max-width: 324px;
-    min-height: 510px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     flex-wrap: nowrap;
+    justify-content: flex-end;
+
     width: 100%;
-    background: linear-gradient(to top, $color-bg-block 84%, #ffffff 16%);
-    padding: 0;
+    max-width: 324px;
+    min-height: 510px;
     margin: 0 auto;
+    padding: 0;
+
+    background: linear-gradient(to top, $color-bg-block 84%, #ffffff 16%);
   }
 
   .product__item-image {
@@ -87,21 +103,25 @@
 
   .product__title {
     max-width: 60%;
-    font-size: 20px;
-    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 0;
     padding-bottom: 20px;
+    padding-left: 0;
+
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
+    font-size: 20px;
   }
 
   .product__composition {
-    font-size: 16px;
-    margin-left: 38px;
     margin-right: 36px;
-    border-collapse: collapse;
     margin-bottom: 34px;
+    margin-left: 38px;
+
+    border-collapse: collapse;
+
+    font-size: 16px;
   }
 
   .product__composition-wrapper {
@@ -117,6 +137,7 @@
     margin-bottom: 37px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .product {
     padding: 0 40px;

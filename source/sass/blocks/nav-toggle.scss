@@ -1,17 +1,20 @@
 .nav-toggle {
-  border: 0;
   margin-top: auto;
   margin-bottom: auto;
+
+  border: 0;
 
   &--closed {
     min-width: 24px;
     min-height: 18px;
+
     background: url("../img/icon-mobile-menu.svg") no-repeat;
   }
 
   &--opened {
     min-width: 18px;
     min-height: 18px;
+
     background: url("../img/icon-close.svg") no-repeat;
   }
 

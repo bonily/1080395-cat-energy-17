@@ -1,103 +1,118 @@
 .contact {
   background-color: #ffffff;
-  &--form,
-  &--catalog {
+
+  &--catalog,
+  &--form {
     background-color: $color-bg-block;
   }
 }
 
 .contact--form {
-background-color: $color-bg-block;
+  background-color: $color-bg-block;
 }
 
 .contact__text {
-  @include mobile-center;
   display: flex;
   justify-content: space-between;
-  padding-top: 29px;
-  padding-bottom: 25px;
-  padding-left: 19px;
-  padding-right: 19px;
 
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 29px 19px 25px;
 }
 
 .contact__text-invitation {
   display: block;
+
   max-width: 50%;
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  color: $color-title;
+
   font-family: $title-font;
   font-size: 16px;
   line-height: 20px;
-  color: $color-title;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
 }
 
 .contact__text-adress {
   display: block;
+
+  margin: 0;
+  padding: 0;
+
   font-family: $main-font;
   font-size: 14px;
   line-height: 20px;
-  padding: 0;
-  margin: 0;
 }
 
 .contact__text-city {
   display: block;
-  padding: 0;
+
   margin: 0;
+  padding: 0;
 }
 
 .contact__map {
   position: relative;
+
   height: 364px;
+
   background: url("../img/bg-map-mobile@1x.png") no-repeat, $color-bg-block;
   background-position: center top -37px;
-  background-size: 320px auto;
   background-clip: content-box;
+  background-size: 320px auto;
 }
 
 .contact__map-point {
   position: absolute;
-  left: calc(50% - 30px);
   top: 141px;
+  left: calc(50% - 30px);
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .contact__map {
     background: url("../img/bg-map-mobile@2x.png") no-repeat;
     background-position: center top -37px;
-    background-size: 320px auto;
     background-clip: content-box;
+    background-size: 320px auto;
   }
 }
 
 @media (min-width: $tablet-width) {
-
   .contact--form {
-  background-color: $color-bg-block;
+    background-color: $color-bg-block;
   }
 
   .contact__text {
-    @include tablet-center;
+    max-width: $tablet-width;
+    padding: 0;
     padding-top: 67px;
     padding-bottom: 62px;
     padding-left: 71px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact__text-invitation {
     max-width: 200px;
+    margin: 0;
+    padding: 0;
+
+    text-transform: uppercase;
+
     font-family: $title-font;
     font-size: 20px;
     line-height: 25px;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
   }
 
   .contact__text-wrapper {
     max-width: 200px;
     padding-right: 42px;
+
     text-align: right;
   }
 
@@ -106,32 +121,36 @@ background-color: $color-bg-block;
   }
 
   .contact__text-city {
-    font-size: 16px;
     padding-top: 20px;
+
+    font-size: 16px;
   }
 
   .contact__map {
     position: relative;
+
     height: 394px;
+
     background: url("../img/bg-map-tablet@1x.png") no-repeat;
     background-position: center top -7px;
-    background-size: 767px auto;
     background-clip: content-box;
+    background-size: 767px auto;
   }
 
   .contact__map-point {
+    top: 144px;
+    left: calc(50% - 62px);
+
     width: 120px;
     height: 104px;
-    left: calc(50% - 62px);
-    top: 144px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .contact__map {
       background: url("../img/bg-map-tablet@2x.png") no-repeat;
       background-position: center top -7px;
-      background-size: 767px auto;
       background-clip: content-box;
+      background-size: 767px auto;
     }
   }
 }
@@ -139,18 +158,22 @@ background-color: $color-bg-block;
 @media (min-width: $desktop-width) {
   .contact {
     position: relative;
+
     background-color: #f2f2f2;
   }
 
   .contact__text {
     position: absolute;
     z-index: 1;
-    width: 570px;
-    left: calc(50% - 610px);
     top: 97px;
-    background-color: #ffffff;
+    left: calc(50% - 610px);
+
     justify-content: space-between;
+
+    width: 570px;
     padding: 62px 0 62px 77px;
+
+    background-color: #ffffff;
   }
 
   .contact__text-invitation {
@@ -159,30 +182,33 @@ background-color: $color-bg-block;
 
   .contact__text-wrapper {
     max-width: 245px;
-    text-align: left;
     padding-right: 52px;
+
+    text-align: left;
   }
 
   .contact__map {
     position: relative;
+
     height: 400px;
+
     background: url("../img/bg-map-desktop@1x.png") no-repeat;
     background-position: center;
-    background-size: 1440px auto;
     background-clip: content-box;
+    background-size: 1440px auto;
   }
 
   .contact__map-point {
-    left: calc(50% + 280px);
     top: 148px;
+    left: calc(50% + 280px);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .contact__map {
       background: url("../img/bg-map-desktop@2x.png") no-repeat;
       background-position: center;
-      background-size: 1440px auto;
       background-clip: content-box;
+      background-size: 1440px auto;
     }
   }
 }

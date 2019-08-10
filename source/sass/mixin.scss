@@ -1,34 +1,35 @@
 @mixin section-title($font: #111111, $size:36px, $height: 60px) {
-  font-family: $title-font;
   color: $font;
+
+  font-family: $title-font;
   font-size: $size;
   font-weight: 400;
   line-height: $height;
 }
 
 @mixin center {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 @mixin mobile-center {
   max-width: 320px;
-  padding: 0 20px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
 }
 
 @mixin tablet-center {
   max-width: 768px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding: 0 30px;
 }
 
 @mixin desktop-center {
   max-width: 1300px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding: 0 40px;
 }
 

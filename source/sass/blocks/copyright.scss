@@ -1,32 +1,35 @@
 .copyright__logo {
   display: flex;
-  min-height: 78px;
   justify-content: space-between;
+
+  min-height: 78px;
   margin: auto;
-  font-size: 16px;
-  line-height: 16px;
-  color: $color-text;
   margin-right: -10px;
   padding: 0;
+
+  color: $color-text;
+
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .copyright__title {
-  margin: 0;
-  margin-left: -2px;
+  margin: 0 0 0 -2px;
   padding: 30px 0 0;
 }
 
 .copyright__image {
   padding-top: 17px;
 
-    &:hover {
-      fill: #68b738;
-    }
+  &:hover {
+    fill: #68b738;
+  }
 
-    &:active {
-      filter: none;
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+
+    filter: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
