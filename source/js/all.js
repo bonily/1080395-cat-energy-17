@@ -23,17 +23,20 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+
 if (form) {
   var weight = document.querySelector('.form__weight');
   var age = document.querySelector('.form__age');
   var cat = document.querySelector('.form__name');
   var mail = document.querySelector('.form__email');
-  var phone = document.querySelector('form__phone');
+  var phone = document.querySelector('.form__phone');
 
   form.addEventListener("submit", function(evt) {
     if (!mail.value) {
       evt.preventDefault();
       mail.classList.add('form__input-text--error');
+    } else {
+      mail.classList.remove('form__input-text--error');
     }
   });
 
@@ -41,6 +44,8 @@ if (form) {
     if (!phone.value) {
       evt.preventDefault();
       phone.classList.add('form__input-text--error');
+    } else {
+      phone.classList.remove('form__input-text--error');
     }
   });
 
@@ -49,12 +54,17 @@ if (form) {
       evt.preventDefault();
       weight.classList.add('form__input-text--error');
     }
+    else {
+      weight.classList.remove('form__input-text--error');
+    }
   });
 
   form.addEventListener("submit", function(evt) {
     if (!cat.value) {
       evt.preventDefault();
       cat.classList.add('form__input-text--error');
+    } else {
+      cat.classList.remove('form__input-text--error');
     }
   });
 
@@ -62,6 +72,9 @@ if (form) {
     if (!age.value) {
       evt.preventDefault();
       age.classList.add('form__input-text--error');
+    }
+    else {
+      age.classList.remove('form__input-text--error');
     }
   });
 }
@@ -91,6 +104,9 @@ if (slider) {
         lineAfter.style.float= 'left';
         button.style.left = 0 + '%';
       });
+
+
+
 
 
       button.addEventListener('mousedown', function (e) {
