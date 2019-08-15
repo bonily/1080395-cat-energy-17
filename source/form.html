@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <title>CAT ENERGY.Функциональное питание для котов.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.mine.css" rel="stylesheet">
   <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
   <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
+    <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -37,7 +39,6 @@
             <a href="#">Подбор программы</a>
           </li>
         </ul>
-
       </nav>
     </div>
   </header>
@@ -51,31 +52,31 @@
           <div class="form__cat">
             <p class="form__cat-name form__detail">
               <label for="cat-name">Имя:*</label>
-              <input class="form__input-text form__name" type="text" id="cat-name" placeholder="БАРСИК">
+              <input class="form__input-text form__name" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК">
             </p>
             <p class="form__cat-weight form__detail">
               <label for="cat-weight">Вес (кг):*</label>
-              <input class="form__input-text form__weight" type="text" id="cat-weight" placeholder="7">
+              <input class="form__input-text form__weight" type="text" name="cat-weight" id="cat-weight" placeholder="7">
             </p>
             <p class="form__cat-age form__detail">
               <label for="cat-age">Возраст (лет):</label>
-              <input class="form__input-text form__age" type="text" id="cat-age" placeholder="7">
+              <input class="form__input-text form__age" type="text" name="cat-age" id="cat-age" placeholder="7">
             </p>
           </div>
           <div class="form__about-wrapper">
             <fieldset class="form__programm">
               <ul class="form__item">
                 <li>
-                    <input class="visually-hidden form__programm-input" type="radio" name="program" id="lose" checked="">
-                    <label for="lose">Похудение
+                  <input class="form__programm-input visually-hidden" type="radio" name="program" id="lose" value="lose" checked>
+                  <label for="lose">Похудение
                   </label></li>
                 <li>
-                    <input class="visually-hidden form__programm-input" type="radio" name="program" id="get">
-                      <label for="get">Набор массы
+                  <input class="form__programm-input visually-hidden" type="radio" name="program" id="get" value="get">
+                  <label for="get">Набор массы
                   </label></li>
                 <li>
-                    <input class="visually-hidden form__programm-input" type="radio" name="program" id="unknown">
-                    <label for="unknown">Не знаю (Нужен ваш совет)
+                  <input class="form__programm-input visually-hidden" type="radio" name="program" id="unknown" value="unknown">
+                  <label for="unknown">Не знаю (Нужен ваш совет)
                   </label></li>
               </ul>
             </fieldset>
@@ -88,15 +89,17 @@
             <div class="form__contact-container">
               <p class="form__contact-email form__detail">
                 <label for="email">E-mail:*</label>
-                <input class="form__input-text form__email" type="email" id="email" placeholder="kuklachev@gmail.com">
-                  <svg class="form__svg-mail" width="17" height="13" viewBox="0 0 17 13" fill="#666666">
-                    <use xlink:href="#icon-mail"></use></svg>
+                <input class="form__input-text form__email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <svg class="form__svg-mail" width="17" height="13" viewBox="0 0 17 13" fill="#666666">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
               </p>
               <p class="form__contact-phone form__detail">
                 <label for="number">Телефон:*</label>
-                <input class="form__input-text form__phone" type="tel" id="number" placeholder="8 (960) 900-60-90">
+                <input class="form__input-text form__phone" type="tel" name="number" id="number" placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
                 <svg class="form__svg-phone" width="20" height="20" viewBox="0 0 20 20" fill="#666666">
-                  <use xlink:href="#icon-phone"></use></svg>
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
               </p>
             </div>
           </div>
@@ -116,16 +119,16 @@
                 <label for="sugar">Сахарозаменитель</label>
               </li>
               <li>
-                  <input class="visually-hidden form__programm-input" type="checkbox" name="water" id="water">
+                <input class="visually-hidden form__programm-input" type="checkbox" name="water" id="water">
                 <label for="water">Питьевая вода
                 </label></li>
               <li>
-                  <input class="visually-hidden form__programm-input" type="checkbox" name="milk" id="milk">
-                  <label for="milk">Молоко
+                <input class="visually-hidden form__programm-input" type="checkbox" name="milk" id="milk">
+                <label for="milk">Молоко
                 </label></li>
               <li>
-                  <input class="visually-hidden form__programm-input" type="checkbox" name="vitamins" id="vitamins">
-                  <label for="vitamins">Витамины
+                <input class="visually-hidden form__programm-input" type="checkbox" name="vitamins" id="vitamins">
+                <label for="vitamins">Витамины
                 </label></li>
             </ul>
           </fieldset>
@@ -140,9 +143,9 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contact contact--form">
+    <section class="contact">
       <h2 class="contact__title visually-hidden">Контакты</h2>
-      <div class="contact__text contact__text--form">
+      <div class="contact__text">
         <p class="contact__text-invitation">
           приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
@@ -153,11 +156,15 @@
         </div>
       </div>
       <div class="contact__map">
+        <div class="contact__map-interaktiv">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79eb325a807aa5710698f9e455cd3006cc60b823950cbfd899fff7cffb1af6a5&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=trueamp;z-index=2"></script>
+        </div>
         <img class="contact__map-point" src="img/map-pin.png" width="62" height="52" alt="Мы находимся здесь">
       </div>
     </section>
     <div class="page-footer__container">
-      <a class="footer-logo" href="#">
+      <a class="page-footer__logo footer-logo" href="#">
         <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY">
       </a>
       <div class="page-footer__social social">
@@ -165,34 +172,34 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в ВКонтакте">
               <svg width="23" height="16" viewBox="0 0 22 12" fill="#666666">
-                  <use xlink:href="#icon-vk"></use></svg></a>
+                <use xlink:href="#icon-vk"></use>
+              </svg></a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграмме">
               <svg width="23" height="16" viewBox="0 0 16.1 16" fill="#666666">
-                <use xlink:href="#icon-insta"></use></svg></a>
-
+                <use xlink:href="#icon-insta"></use>
+              </svg></a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
               <svg width="13" height="16" viewBox="0 0 10 19" fill="#666666">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
+                <use xlink:href="#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="copyright">
+      <div class="page-footer__copyright copyright">
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__title">HTML Academy</p>
-          <svg class="copyright__image" width="44" height="58" viewBox="0 0 60 60" fill="#666666">
-              <use xlink:href="#htmlacademy"></use>
+          <svg class="copyright__image" width="42" height="60" viewBox="0 0 60 60" fill="#666666">
+            <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-
   <script src="js/all.js"></script>
 </body>
 

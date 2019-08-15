@@ -73,7 +73,7 @@
       content: " ";
 
       background: url("../img/advantage-dining@1x.png") no-repeat, $color-bg-btn;
-      background-position: center;
+      background-position: center, center;
       background-size: 50px 50px, auto;
     }
   }
@@ -167,7 +167,7 @@
 
   .specification__item {
     max-width: 50%;
-    height: 230px;
+    min-height: 230px;
     padding-top: 112px;
     padding-right: 120px;
     padding-left: 0;
@@ -175,7 +175,7 @@
     @include tablet-fonts(16px, 24px);
 
     &:last-child {
-      margin-bottom: 57px;
+      margin-bottom: 55px;
     }
 
     &::after {
@@ -205,7 +205,6 @@
         content: " ";
 
         background-position: center;
-
       }
     }
 
@@ -262,7 +261,7 @@
   }
 
   .specification__title {
-    padding-top: 35px;
+    padding-top: 36px;
     padding-left: 40px;
   }
 
@@ -273,12 +272,16 @@
   }
 
   .specification__item {
-    max-width: 25%;
+    width: 25%;
     margin-right: 35px;
     margin-bottom: 0;
-    margin-left: 38px;
+    margin-left: 41px;
     padding-top: 112px;
     padding-right: 0;
+
+    &::before {
+      left: 0;
+    }
 
     &--appliances {
       &::before {
@@ -293,12 +296,6 @@
         top: 0;
 
         background-position: center;
-      }
-    }
-
-    &:nth-child(even) {
-      &::before {
-        left: 0;
       }
     }
 

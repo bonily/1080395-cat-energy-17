@@ -1,0 +1,118 @@
+.aditional__property {
+  display: table;
+
+  width: 100%;
+  padding-bottom: 17px;
+}
+
+.aditional__item-title {
+  display: table-caption;
+
+  padding: 0 0 11px 2px;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  @include section-title(#222222,16px,16px);
+}
+
+.aditional__property-wrapper {
+  display: table-row;
+}
+
+.aditional__pack {
+  display: table-cell;
+
+  margin-left: -1px;
+  padding: 0;
+
+  text-align: left;
+}
+
+.aditional__cost {
+  display: table-cell;
+
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.aditional__button {
+  min-width: 280px;
+  margin-bottom: 18px;
+  padding-top: 11px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .aditional__property {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+  }
+
+  .aditional__item-title {
+    display: block;
+
+    max-width: 350px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .aditional__property-wrapper {
+    display: flex;
+  }
+
+  .aditional__cost {
+    display: block;
+
+    width: 92px;
+  }
+
+  .aditional__button {
+    display: block;
+
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .aditional__item-title {
+    width: 285px;
+    margin-top: -1px;
+    margin-right: 40px;
+    padding-bottom: 0;
+  }
+
+  .aditional__property {
+    margin-right: 38px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
+
+  .aditional__property-wrapper {
+    padding-top: 2px;
+  }
+
+  .aditional__cost {
+    width: 44px;
+
+    text-align: left;
+  }
+
+  .aditional__pack {
+    min-width: 240px;
+
+    text-align: left;
+  }
+
+  .aditional__button {
+    min-width: 245px;
+    max-height: 40px;
+    margin-top: 12.5px;
+  }
+}

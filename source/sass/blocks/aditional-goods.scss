@@ -42,20 +42,6 @@
   list-style: none;
 }
 
-.aditional__property {
-  width: 100%;
-  padding-bottom: 11px;
-}
-
-.aditional__item-title {
-  padding: 0 0 11px 2px;
-
-  text-align: left;
-  text-transform: uppercase;
-
-  @include section-title(#222222,16px,16px);
-}
-
 .aditional-goods__item {
   padding-top: 12px;
 
@@ -71,27 +57,6 @@
   }
 }
 
-.aditional__pack {
-  margin-left: -1px;
-  padding: 0;
-
-  text-align: left;
-}
-
-.aditional__cost {
-  text-align: right;
-  text-transform: uppercase;
-}
-
-.aditional__button {
-  min-width: 280px;
-  margin-bottom: 18px;
-  padding-top: 11px;
-
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .aditional-goods__gift {
   position: relative;
 
@@ -99,15 +64,15 @@
 
   width: auto;
   height: 289px;
-  margin-top: 40px;
+  margin-top: 38px;
 
-  background: url("../img/gift-photo-mobile@1x.jpg");
-  background-color: #62a639;
+  background: url("../img/gift-photo-mobile@1x.jpg"), #62a639;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .aditional-goods__gift {
-    background: url("../img/gift-photo-mobile@2x.jpg");
+    background: url("../img/gift-photo-mobile@2x.jpg"), #62a639;
+    background-size: 280px auto;
   }
 }
 
@@ -116,10 +81,11 @@
 
   text-align: center;
 
+  color: #ffffff;
+
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
 
   &::before {
     position: absolute;
@@ -138,7 +104,8 @@
 
 @media (min-width: $tablet-width) {
   .aditional-goods__title {
-    padding-bottom: 71px;
+    margin-top: 30px;
+    padding-bottom: 68px;
     padding-left: calc((100% - 710px) / 2);
 
     border-top: 3px solid $color-bg-btn;
@@ -151,9 +118,9 @@
   }
 
   .aditional-goods__title span {
-    margin-top: -37px;
+    margin-top: -35px;
     padding-right: 41px;
-    padding-left: 39px;
+    padding-left: 41px;
 
     background-color: #ffffff;
   }
@@ -164,38 +131,14 @@
     padding-left: 30px;
   }
 
-  .aditional__property {
-    display: flex;
-    justify-content: space-between;
-
-    padding-bottom: 15px;
-  }
-
-  .aditional__item-title {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .aditional-goods__item {
-    padding-top: 25px;
-    padding-right: 37px;
-    padding-bottom: 27px;
-    padding-left: 39px;
+    padding: 25px 37px 27px 41px;
 
     border-right: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
 
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .aditional__cost {
-    width: 92px;
-  }
-
-  .aditional__button {
-    max-width: none;
-    margin: 0;
   }
 }
 
@@ -205,12 +148,13 @@
     margin-top: 70px;
     margin-bottom: 74px;
 
-    background: url("../img/gift-photo-tablet@1x.jpg");
+    background: url("../img/gift-photo-tablet@1x.jpg"), #62a639;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .aditional-goods__gift {
-      background: url("../img/gift-photo-tablet@2x.jpg");
+      background: url("../img/gift-photo-tablet@2x.jpg"), #62a639;
+      background-size: 708px auto;
     }
   }
 
@@ -228,11 +172,11 @@
 
 @media (min-width: $desktop-width) {
   .aditional-goods {
-    margin-bottom: 87px;
+    margin-bottom: 179px;
   }
 
   .aditional-goods__title {
-    padding-bottom: 68px;
+    padding-bottom: 66px;
     padding-left: calc((100% - 1300px) / 2);
 
     border-top: 3px solid $color-bg-btn;
@@ -250,6 +194,10 @@
     padding-right: 40px;
   }
 
+  .aditional-goods__list {
+    width: 928px;
+  }
+
   .aditional-goods__item {
     display: flex;
 
@@ -260,46 +208,17 @@
     border-top: 1px solid #cdcdcd;
   }
 
-  .aditional__item-title {
-    min-width: 285px;
-    margin-right: 40px;
-    padding-bottom: 0;
-  }
-
-  .aditional__property {
-    margin-right: 38px;
-    padding-top: 25px;
-    padding-bottom: 20px;
-  }
-
-  .aditional__cost {
-    width: 44px;
-
-    text-align: left;
-  }
-
-  .aditional__pack {
-    min-width: 240px;
-
-    text-align: left;
-  }
-
-  .aditional__button {
-    min-width: 245px;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
   .aditional-goods__gift {
     width: 245px;
     margin-top: 0;
 
-    background: url("../img/gift-photo-desktop@1x.jpg");
+    background: url("../img/gift-photo-desktop@1x.jpg"), #62a639;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .aditional-goods__gift {
-      background: url("../img/gift-photo-desktop@2x.jpg");
+      background: url("../img/gift-photo-desktop@2x.jpg"), #62a639;
+      background-size: 245px auto;
     }
   }
 

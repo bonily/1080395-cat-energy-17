@@ -117,6 +117,9 @@
 .program__button {
   display: inline-block;
 
+  margin: 0;
+  padding: 20px 0 23px;
+
   text-transform: uppercase;
 
   font-family: $title-font;
@@ -124,66 +127,48 @@
   font-weight: normal;
   line-height: 16px;
 
-  &:hover .program__catalog::after {
-    width: 33px;
-
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:active .program__catalog::after {
-    width: 33px;
-
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-  }
-}
-
-.program__catalog {
-  display: inline-block;
-
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 23px;
-
   &::after {
     display: inline-block;
 
     width: 24px;
     height: 11px;
-    margin-left: 12px;
+    margin-left: 8px;
+    padding-top: 12px;
 
     content: " ";
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      width: 33px;
+
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 33px;
+
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .program__item {
     position: relative;
-  }
 
-  .program__title {
-    padding: 44px 0 26px;
+    padding-right: 271px;
+    padding-left: 53px;
 
-    &--slim::after,
-    &--slim::before {
-      display: none;
+    &:last-child {
+      margin-bottom: 14px;
     }
-
-    &--pro::after,
-    &--pro::before {
-      display: none;
-    }
-  }
-
-  .program__item-wrapper {
-    padding-right: 262px;
-    padding-left: 33px;
 
     &--slim::before {
       position: absolute;
@@ -221,7 +206,7 @@
     }
 
     &--pro {
-      padding-right: 295px;
+      padding-right: 312px;
     }
 
     &--pro::before {
@@ -259,6 +244,20 @@
       background-color: $color-bg-btn;
     }
   }
+
+  .program__title {
+    padding: 46px 0 25px;
+
+    &--slim::after,
+    &--slim::before {
+      display: none;
+    }
+
+    &--pro::after,
+    &--pro::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -288,13 +287,12 @@
     font-family: $title-font;
 
     @include tablet-fonts;
-  }
 
-  .program__catalog {
     &::after {
-      margin-left: 23px;
+      margin-left: 18px;
+      padding-top: 18px;
 
-      background-position: left -1px;
+      background-position: left;
     }
   }
 }
@@ -308,13 +306,13 @@
   }
 
   .program__title {
-    padding: 46px 0 0 163px;
+    padding: 49px 0 0 161px;
 
     @include tablet-fonts(36px, 37px);
 
     &--slim::before {
       z-index: 1;
-      top: 9px;
+      top: 12px;
       left: -4px;
 
       width: 104px;
@@ -323,7 +321,7 @@
 
     &--slim::after {
       z-index: 0;
-      top: 17px;
+      top: 20px;
       left: -1px;
 
       width: 100px;
@@ -332,7 +330,7 @@
 
     &--pro::before {
       z-index: 1;
-      top: 15px;
+      top: 17px;
       left: -20px;
 
       width: 135px;
@@ -341,7 +339,7 @@
 
     &--pro::after {
       z-index: 0;
-      top: 17px;
+      top: 20px;
       left: -1px;
 
       width: 100px;
@@ -356,6 +354,7 @@
     margin-bottom: 38px;
     margin-left: auto;
     padding-right: 54px;
+    padding-bottom: 39px;
     padding-left: 53px;
 
     &:last-child {

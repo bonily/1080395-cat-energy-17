@@ -6,9 +6,7 @@
 
 .example__title {
   max-width: 320px;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 17px 0 25px;
 
   @include section-title;
@@ -16,9 +14,7 @@
 
 .example-container {
   max-width: 320px;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .example__description-text {
@@ -36,7 +32,7 @@
   display: block;
 
   width: 124px;
-  padding-top: 15px;
+  padding-top: 14px;
 
   text-align: center;
   text-transform: uppercase;
@@ -54,7 +50,7 @@
 
   min-width: 87px;
   max-width: 87px;
-  margin: 8px auto -16px;
+  margin: 9px auto -16px;
   padding: 0 5px;
 
   text-transform: none;
@@ -70,11 +66,13 @@
 .example__description-cost {
   display: block;
 
-  margin: 0 auto 32px;
+  margin: 0 auto 33px;
   padding: 10px 0 0;
 
   text-align: center;
   text-transform: uppercase;
+
+  color: $color-title;
 
   font-family: $title-font;
   line-height: 20px;
@@ -90,22 +88,22 @@
 
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
     background-position: bottom;
-    background-size: auto 463px;
+    background-size: 100% 460px;
   }
 
   .example__title {
     max-width: $tablet-width;
+    margin-bottom: 40px;
     padding-top: 42px;
-    padding-bottom: 65px;
 
     @include section-title($color-title, 60px, 60px);
   }
 
   .example-container {
     max-width: $tablet-width;
-    padding: 0;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    padding: 0;
   }
 
   .example__description-text {
@@ -115,8 +113,9 @@
 
   .example__description-details {
     width: 163px;
-    margin-top: 51px;
+    margin-top: 53px;
     margin-right: 42px;
+    padding-top: 15px;
 
     @include tablet-fonts(30px,37px);
   }
@@ -127,6 +126,8 @@
     margin: 11px auto -6px;
     padding: 0;
 
+    background-color: #ffffff;
+
     @include tablet-fonts(14px,14px);
   }
 
@@ -135,7 +136,7 @@
     margin-top: auto;
     margin-right: 0;
     padding-top: 0;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
 
     text-align: right;
     text-transform: uppercase;
@@ -144,7 +145,7 @@
   }
 
   .example__description-wrapper {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 }
 
@@ -155,15 +156,16 @@
     border-top: none;
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
     background-position: bottom;
-    background-size: auto 463px;
+    background-size: 100% 463px;
   }
 
   .example-wrapper {
+    margin-bottom: 93px;
     padding: 0;
 
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
     background-position: calc(50% + 325px) bottom;
-    background-size: auto 463px;
+    background-size: 100% 463px;
   }
 
   .example__title {
@@ -176,7 +178,7 @@
 
   .example-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     max-width: 1300px;
     margin-top: -180px;
@@ -185,12 +187,15 @@
   .example__description {
     max-width: 570px;
     margin-top: auto;
+    margin-right: 60px;
   }
 
   .example__description-text {
-    padding-right: 98px;
-    padding-bottom: 67px;
-    padding-left: 40px;
+    padding: 260px 98px 67px 40px;
+  }
+
+  .example__description-details small {
+    background-color: #f2f2f2;
   }
 
   .example__description-details {

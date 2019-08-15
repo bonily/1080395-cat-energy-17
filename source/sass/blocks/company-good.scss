@@ -4,9 +4,10 @@
   text-align: center;
 
   border-top: 1px solid $color-border;
-  background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $color-bg 306px, #ffffff calc(100% - 306px));
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat center top, linear-gradient(to bottom, $color-bg 70%, #ffffff 30%);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top, center -31px;
+  background-size: 320px auto, 100% auto;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -51,6 +52,8 @@
 
 @media (min-width: $tablet-width) {
   .company-good__wrapper {
+    margin-bottom: -3px;
+
     border-top: none;
     background: #ffffff;
     background-image: none;
@@ -68,7 +71,7 @@
 
   .company-good__main-title {
     max-width: 505px;
-    padding-top: 44px;
+    padding-top: 47px;
     padding-bottom: 43px;
     padding-left: 87px;
 
@@ -78,13 +81,14 @@
   }
 
   .company-good__tagline {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     padding-left: 89px;
 
     text-align: left;
     text-transform: uppercase;
 
     color: $color-title;
+
     font-family: $title-font;
 
     @include tablet-fonts;

@@ -38,14 +38,13 @@
 
 .form__cat {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .form__detail {
   display: flex;
 
-  margin: 0 0 13px;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   padding: 0 20px;
 
   text-transform: uppercase;
@@ -63,7 +62,7 @@
   width: 100%;
   margin-left: 8px;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
   padding-left: 15px;
 
   text-transform: uppercase;
@@ -86,6 +85,8 @@
 
   &::placeholder {
     color: $color-title;
+
+    opacity: 1;
   }
 
   &--error {
@@ -125,19 +126,19 @@
 
 .form__cat-weight label {
   min-width: 68px;
-  padding-top: 14px;
+  padding-top: 13px;
 }
 
 .form__cat-age label {
   min-width: 101px;
-  padding-top: 14px;
+  padding-top: 12px;
 }
 
 .form__about-wrapper {
   width: 100%;
 
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 
 .form__complete-detail,
@@ -203,6 +204,13 @@ input.form__programm-input[type="radio"] + label {
   }
 }
 
+input.form__programm-input[type="radio"]:focus + label {
+  &::before {
+    outline: rgb(59, 153, 252) auto 5px;
+    outline-offset: -2px;
+  }
+}
+
 input.form__programm-input[type="radio"]:checked + label {
   &::before {
     background-color: #68b738;
@@ -211,7 +219,7 @@ input.form__programm-input[type="radio"]:checked + label {
 
 .form__contact {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .form__contact-wrapper {
@@ -223,6 +231,8 @@ input.form__programm-input[type="radio"]:checked + label {
 
   margin: 28px 0 0;
   padding: 0 0 34px calc((100% - 280px) / 2);
+
+  color: $color-title;
 
   font-family: $title-font;
   font-size: 24px;
@@ -274,7 +284,7 @@ input.form__programm-input[type="radio"]:checked + label {
 
 .form__svg-phone {
   position: absolute;
-  top: 14px;
+  top: 12px;
   right: 32px;
 }
 
@@ -352,6 +362,13 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 }
 
+input.form__programm-input[type="checkbox"]:focus + label {
+  &::before {
+    outline: rgb(59, 153, 252) auto 5px;
+    outline-offset: -2px;
+  }
+}
+
 .form__button {
   width: 280px;
   margin-bottom: 21px;
@@ -378,7 +395,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__cat {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 
   .form__title {
@@ -405,7 +422,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__detail {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     padding-right: 67px;
     padding-left: 71px;
 
@@ -430,6 +447,12 @@ input.form__programm-input[type="checkbox"]:checked + label {
 
   .form__text-input {
     padding-bottom: 15px;
+    padding-left: 18px;
+  }
+
+  .form__input-text {
+    padding-top: 15px;
+    padding-bottom: 12px;
     padding-left: 18px;
   }
 
@@ -494,7 +517,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__contact-title {
-    margin-top: 100px;
+    margin-top: 96px;
   }
 
   .form__contact-container {
@@ -532,7 +555,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__contact {
-    margin-bottom: 89px;
+    margin-bottom: 86px;
   }
 
   .form__input-comment {
@@ -617,7 +640,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 82px;
+    margin-bottom: 175px;
   }
 
   .form__title {
@@ -661,13 +684,15 @@ input.form__programm-input[type="checkbox"]:checked + label {
     padding-left: 0;
   }
 
+  .form__cat .form__detail {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .form__complete-detail,
   .form__programm {
     padding: 32px 0 0 36px;
-  }
-
-  .form__cat-age {
-    margin-bottom: 0;
   }
 
   .form__points-title {
@@ -675,11 +700,12 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__contact-title {
-    margin-top: 90px;
+    margin-top: 88px;
   }
 
   .form__contact-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     max-width: $desktop-width;
@@ -697,6 +723,19 @@ input.form__programm-input[type="checkbox"]:checked + label {
     width: 50%;
   }
 
+  .form__email {
+    margin-left: 13px;
+    padding-top: 11px;
+    padding-bottom: 16px;
+  }
+
+  .form__phone {
+    margin-left: 8px;
+    padding-top: 11px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+  }
+
   .form__svg-mail {
     right: 60px;
   }
@@ -711,7 +750,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__contact {
-    margin-bottom: 71px;
+    margin-bottom: 68px;
   }
 
   .form__comment-title span {
@@ -745,7 +784,7 @@ input.form__programm-input[type="checkbox"]:checked + label {
   }
 
   .form__item-complete {
-    justify-content: space-between;
+    justify-content: flex-start;
 
     padding-right: 0;
     padding-left: 0;

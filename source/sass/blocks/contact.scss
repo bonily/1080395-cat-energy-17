@@ -13,7 +13,7 @@
 
 .contact__text {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   max-width: 320px;
   margin-right: auto;
@@ -24,8 +24,8 @@
 .contact__text-invitation {
   display: block;
 
-  max-width: 50%;
-  margin: 0;
+  max-width: 43%;
+  margin: 0 20px 0 0;
   padding: 0;
 
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   display: block;
 
   margin: 0;
-  padding: 0;
+  padding: 2px 0 0;
 }
 
 .contact__map {
@@ -60,7 +60,7 @@
 
   height: 364px;
 
-  background: url("../img/bg-map-mobile@1x.png") no-repeat, $color-bg-block;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat, #f2f2f2;
   background-position: center top -37px;
   background-clip: content-box;
   background-size: 320px auto;
@@ -68,13 +68,19 @@
 
 .contact__map-point {
   position: absolute;
+  z-index: 1;
   top: 141px;
   left: calc(50% - 30px);
 }
 
+.contact__map-interaktiv {
+  position: relative;
+  z-index: 10;
+}
+
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .contact__map {
-    background: url("../img/bg-map-mobile@2x.png") no-repeat;
+    background: url("../img/bg-map-mobile@2x.png") no-repeat, #f2f2f2;
     background-position: center top -37px;
     background-clip: content-box;
     background-size: 320px auto;
@@ -88,18 +94,14 @@
 
   .contact__text {
     max-width: $tablet-width;
-    padding: 0;
-    padding-top: 67px;
-    padding-bottom: 62px;
-    padding-left: 71px;
-    padding-right: 30px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    padding: 67px 30px 62px 74px;
   }
 
   .contact__text-invitation {
     max-width: 200px;
-    margin: 0;
+    margin: 0 271px 0 0;
     padding: 0;
 
     text-transform: uppercase;
@@ -131,7 +133,7 @@
 
     height: 394px;
 
-    background: url("../img/bg-map-tablet@1x.png") no-repeat;
+    background: url("../img/bg-map-tablet@1x.png") no-repeat, #f2f2f2;
     background-position: center top -7px;
     background-clip: content-box;
     background-size: 767px auto;
@@ -147,7 +149,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .contact__map {
-      background: url("../img/bg-map-tablet@2x.png") no-repeat;
+      background: url("../img/bg-map-tablet@2x.png") no-repeat, #f2f2f2;
       background-position: center top -7px;
       background-clip: content-box;
       background-size: 767px auto;
@@ -163,21 +165,21 @@
   }
 
   .contact__text {
-    position: absolute;
-    z-index: 1;
-    top: 97px;
-    left: calc(50% - 610px);
+    position: relative;
+    z-index: 15;
 
     justify-content: space-between;
 
     width: 570px;
-    padding: 62px 0 62px 77px;
+    margin-left: calc((100% - 1220px) / 2);
+    padding: 66px 0 62px 77px;
 
     background-color: #ffffff;
   }
 
   .contact__text-invitation {
     max-width: 235px;
+    margin-right: 10px;
   }
 
   .contact__text-wrapper {
@@ -191,8 +193,9 @@
     position: relative;
 
     height: 400px;
+    margin-top: -300px;
 
-    background: url("../img/bg-map-desktop@1x.png") no-repeat;
+    background: url("../img/bg-map-desktop@1x.png") no-repeat, #f2f2f2;
     background-position: center;
     background-clip: content-box;
     background-size: 1440px auto;
@@ -205,7 +208,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .contact__map {
-      background: url("../img/bg-map-desktop@2x.png") no-repeat;
+      background: url("../img/bg-map-desktop@2x.png") no-repeat, #f2f2f2;
       background-position: center;
       background-clip: content-box;
       background-size: 1440px auto;
