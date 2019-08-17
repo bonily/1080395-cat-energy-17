@@ -5,14 +5,19 @@
 }
 
 .page-footer__container {
+  position: relative;
+  z-index: 15;
+
+  background: $color-bg-block;
+
   @include mobile-center;
 }
 
 .page-footer__logo {
   display: block;
 
-  padding-top: 39px;
-  padding-bottom: 31px;
+  padding-top: 38px;
+  padding-bottom: 30px;
 
   border-bottom: 1px solid $color-border;
 }

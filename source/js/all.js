@@ -29,7 +29,7 @@ if (form) {
   var mail = document.querySelector('.form__email');
   var phone = document.querySelector('.form__phone');
 
-  form.addEventListener("submit", function(evt) {
+  form.addEventListener('submit', function(evt) {
     if (!mail.value) {
       evt.preventDefault();
       mail.classList.add('form__input-text--error');

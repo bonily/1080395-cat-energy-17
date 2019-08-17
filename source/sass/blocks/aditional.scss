@@ -64,6 +64,8 @@
 
   .aditional__property-wrapper {
     display: flex;
+
+    padding-top: 4px;
   }
 
   .aditional__cost {
@@ -90,12 +92,12 @@
 
   .aditional__property {
     margin-right: 38px;
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 26px;
+    padding-bottom: 22px;
   }
 
   .aditional__property-wrapper {
-    padding-top: 2px;
+    padding-top: 3px;
   }
 
   .aditional__cost {
@@ -105,7 +107,7 @@
   }
 
   .aditional__pack {
-    min-width: 240px;
+    min-width: 245px;
 
     text-align: left;
   }
@@ -113,6 +115,6 @@
   .aditional__button {
     min-width: 245px;
     max-height: 40px;
-    margin-top: 12.5px;
+    margin-top: 14.5px;
   }
 }

@@ -194,6 +194,6 @@
 
 @media (min-width: 1440px) {
   .company-good__wrapper {
-    background-position: right, center;
+    background-position: calc(50% + 360px), center;
   }
 }

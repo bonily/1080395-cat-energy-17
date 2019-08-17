@@ -76,6 +76,8 @@
 .contact__map-interaktiv {
   position: relative;
   z-index: 10;
+
+  height: 364px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -88,6 +90,7 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact--catalog,
   .contact--form {
     background-color: $color-bg-block;
   }

@@ -261,21 +261,23 @@
   }
 
   .specification__title {
+    margin-bottom: 0;
     padding-top: 36px;
     padding-left: 40px;
   }
 
   .specification__list {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    padding-left: 39px;
   }
 
   .specification__item {
-    width: 25%;
-    margin-right: 35px;
+    max-width: 260px;
+    margin-top: 20px;
+    margin-right: 65px;
     margin-bottom: 0;
-    margin-left: 41px;
     padding-top: 112px;
     padding-right: 0;
 
@@ -299,8 +301,11 @@
       }
     }
 
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
     &:last-child {
-      margin-right: 39px;
       margin-bottom: 0;
     }
   }
